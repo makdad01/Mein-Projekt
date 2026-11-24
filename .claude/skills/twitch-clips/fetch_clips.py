@@ -56,5 +56,10 @@ for login, bid in cfg["streamer"].items():
         if not cursor or not d["data"]:
             break
 
+# Schon empfohlene Clips rausfiltern, damit jede Stunde neue Vorschläge kommen
+seen_file = ROOT / "tiktok/clips/empfohlen.txt"
+seen = set(seen_file.read_text().split()) if seen_file.exists() else set()
+clips = [c for c in clips if c["url"] not in seen]
+
 clips.sort(key=lambda c: c["views_pro_stunde"], reverse=True)
-print(json.dumps({"zeitraum_utc": [fmt(start), fmt(now)], "anzahl": len(clips), "clips": clips}, ensure_ascii=False, indent=1))
+print(json.dumps({"zeitraum_utc": [fmt(start), fmt(now)], "anzahl": len(clips), "schon_empfohlen_ausgeblendet": len(seen), "clips": clips}, ensure_ascii=False, indent=1))

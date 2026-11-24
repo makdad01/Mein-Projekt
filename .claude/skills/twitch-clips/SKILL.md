@@ -1,12 +1,12 @@
 ---
 name: twitch-clips
-description: Sucht die Twitch-Clips der letzten 12 Stunden von Makis Lieblings-Streamern heraus und wählt die 3–5 mit dem größten Viral-Potenzial für TikTok aus (max. 59 Sekunden). Nutzen, wenn Maki nach Clips, Twitch-Highlights oder Clip-Vorschlägen fragt, beim geplanten 12-Stunden-Lauf, oder wenn Maki zurückmeldet, welche Clips viral gegangen sind.
+description: Sucht die Twitch-Clips der letzten 12 Stunden von Makis Lieblings-Streamern heraus und wählt die 5 noch nicht empfohlenen mit dem größten Viral-Potenzial für TikTok aus (max. 59 Sekunden). Nutzen, wenn Maki nach Clips, Twitch-Highlights oder Clip-Vorschlägen fragt, beim stündlichen Lauf, oder wenn Maki zurückmeldet, welche Clips viral gegangen sind.
 ---
 
 # Twitch-Clips für TikTok auswählen
 
-Ziel: Aus allen Clips der letzten **12 Stunden** die **3–5 besten** für Makis TikTok finden.
-Du lieferst **Links + Begründung**, keine Videodateien.
+Ziel: **Jede Stunde** aus allen Clips der letzten **12 Stunden** die **Top 5** für Makis TikTok finden – nur Clips, die noch nie empfohlen wurden.
+Du lieferst **Links + Begründung**, keine Videodateien. Maki schaut sie an und lädt hoch, was ihm gefällt.
 
 ## Streamer-Liste
 
@@ -16,8 +16,9 @@ Gepflegt in `tiktok/clips/streamer.md`. Nur diese Kanäle durchsuchen, außer Ma
 
 1. **Länge ≤ 59 Sekunden.** Längere Clips fliegen raus.
 2. **Zeitraum:** nur Clips, die in den letzten 12 Stunden erstellt wurden.
-3. **Sprache:** Deutsch bevorzugt (alle Streamer der Liste sind deutsch).
-4. Keine Clips mit Gewalt, Hass, sexuellen Inhalten oder echten Privatdaten – die bringen Strikes auf TikTok.
+3. **Keine Wiederholungen:** Clips aus `tiktok/clips/empfohlen.txt` nie nochmal vorschlagen (das Skript filtert sie raus).
+4. **Sprache:** Deutsch bevorzugt (alle Streamer der Liste sind deutsch).
+5. Keine Clips mit Gewalt, Hass, sexuellen Inhalten oder echten Privatdaten – die bringen Strikes auf TikTok.
 
 ## Ablauf
 
@@ -27,8 +28,9 @@ Gepflegt in `tiktok/clips/streamer.md`. Nur diese Kanäle durchsuchen, außer Ma
    Bei **Fehler 401**: Code abgelaufen → Maki benachrichtigen, Anleitung in `tiktok/clips/README.md` („Code erneuern“).
 2. Filtern: Dauer ≤ 59 s.
 3. Jeden Clip mit dem **Viral-Score** bewerten (unten).
-4. Top 3–5 auswählen – höchstens 2 vom selben Streamer, damit es abwechslungsreich bleibt.
-5. Ergebnis als `tiktok/clips/JJJJ-MM-TT-HHMM.md` speichern, nach `main` committen und pushen.
+4. **Top 5** auswählen – höchstens 2 vom selben Streamer, damit es abwechslungsreich bleibt. Gibt es weniger als 5 brauchbare neue Clips, nur die brauchbaren nehmen und das dazuschreiben.
+5. Die URLs der ausgewählten Clips ans Ende von `tiktok/clips/empfohlen.txt` anhängen (eine pro Zeile).
+6. Ergebnis als `tiktok/clips/JJJJ-MM-TT-HHMM.md` speichern, nach `main` committen und pushen.
 
 ## Viral-Score (0–100)
 
