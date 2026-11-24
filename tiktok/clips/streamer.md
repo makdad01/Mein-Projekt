@@ -16,3 +16,7 @@ Die Twitch-IDs stehen in [config.json](config.json) – neue Streamer dort **und
 | Mert Abi Mula | `mertabimula` | 463204522 |
 | Ali Bumaye | `alibumayetv` | 803142740 |
 | Daniel Slump | `danielslump` | 637227911 |
+| Delarue | `delaruetv` | 533163287 |
+| HamedLoco | `hamedloco` | 470335253 |
+| Niklas Wilson | `niklaswilson` | 501438035 |
+| Sidney Eweka | `sidneyeweka` | 135177864 |
