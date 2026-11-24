@@ -1,11 +1,11 @@
 ---
 name: twitch-clips
-description: Sucht die Twitch-Clips der letzten 12 Stunden von Makis Lieblings-Streamern heraus und wählt die 5 noch nicht empfohlenen mit dem größten Viral-Potenzial für TikTok aus (max. 59 Sekunden). Nutzen, wenn Maki nach Clips, Twitch-Highlights oder Clip-Vorschlägen fragt, beim stündlichen Lauf, oder wenn Maki zurückmeldet, welche Clips viral gegangen sind.
+description: Sucht jede Stunde die neuen Twitch-Clips der letzten 60 Minuten von Makis Lieblings-Streamern heraus und wählt die 5 noch nicht empfohlenen mit dem größten Viral-Potenzial für TikTok aus (max. 59 Sekunden). Nutzen, wenn Maki nach Clips, Twitch-Highlights oder Clip-Vorschlägen fragt, beim stündlichen Lauf, oder wenn Maki zurückmeldet, welche Clips viral gegangen sind.
 ---
 
 # Twitch-Clips für TikTok auswählen
 
-Ziel: **Jede Stunde** aus allen Clips der letzten **12 Stunden** die **Top 5** für Makis TikTok finden – nur Clips, die noch nie empfohlen wurden.
+Ziel: **Jede Stunde** aus allen Clips der **letzten 60 Minuten** die **Top 5** für Makis TikTok finden – nur Clips, die noch nie empfohlen wurden.
 Du lieferst **Links + Begründung**, keine Videodateien. Maki schaut sie an und lädt hoch, was ihm gefällt.
 
 ## Streamer-Liste
@@ -15,7 +15,7 @@ Gepflegt in `tiktok/clips/streamer.md`. Nur diese Kanäle durchsuchen, außer Ma
 ## Harte Regeln
 
 1. **Länge ≤ 59 Sekunden.** Längere Clips fliegen raus.
-2. **Zeitraum:** nur Clips, die in den letzten 12 Stunden erstellt wurden.
+2. **Zeitraum:** nur Clips der letzten 60 Minuten (das Skript schaut 75 min zurück, damit bei leicht verspätetem Lauf nichts durchrutscht – doppelte fallen durch `empfohlen.txt` raus). So bekommt Maki jeden Clip mit Viral-Potenzial genau einmal.
 3. **Keine Wiederholungen:** Clips aus `tiktok/clips/empfohlen.txt` nie nochmal vorschlagen (das Skript filtert sie raus).
 4. **Sprache:** Deutsch bevorzugt (alle Streamer der Liste sind deutsch).
 5. Keine Clips mit Gewalt, Hass, sexuellen Inhalten oder echten Privatdaten – die bringen Strikes auf TikTok.
@@ -23,7 +23,7 @@ Gepflegt in `tiktok/clips/streamer.md`. Nur diese Kanäle durchsuchen, außer Ma
 ## Ablauf
 
 1. Clips abrufen: `python3 .claude/skills/twitch-clips/fetch_clips.py > <scratchpad>/clips.json`
-   Gibt alle Clips ≤ 59 s der letzten 12 h als JSON aus, sortiert nach Views pro Stunde.
+   Gibt alle Clips ≤ 59 s der letzten 75 min als JSON aus, sortiert nach Views pro Stunde.
    Der Twitch-Zugangscode wird automatisch vom Proxy an api.twitch.tv angehängt.
    Bei **Fehler 401**: Code abgelaufen → Maki benachrichtigen, Anleitung in `tiktok/clips/README.md` („Code erneuern“).
 2. Filtern: Dauer ≤ 59 s.
@@ -47,7 +47,7 @@ Lies **vor jedem Lauf** `tiktok/clips/learnings.md` und wende die Learnings an.
 
 ## Grenzen (ehrlich angeben)
 - Du kannst die Clips **nicht anschauen**, nur Titel, Länge und Zahlen sehen. Hook und Kontext sind aus dem Titel geschätzt – das im Ergebnis dazuschreiben.
-- Twitch zählt Views verzögert. Sehr junge Clips (< 1 h) nicht nur nach Views pro Stunde bewerten.
+- Twitch zählt Views verzögert, und alle Clips sind höchstens ~1 h alt. Deshalb zählen **Titel, Streamer und wie viele Leute denselben Moment geclippt haben** (mehrere Clips zur gleichen Zeit beim gleichen Streamer = großer Moment) genauso viel wie die Views.
 - Clips mit dem Stream-Titel als Clip-Titel (z. B. „[DROPS] …“) sind meist unbenannt und schwer einzuschätzen → nur nehmen, wenn die Zahlen klar herausstechen.
 
 ## Ausgabeformat

@@ -8,7 +8,7 @@ Jede Stunde werden die 5 besten neuen Twitch-Clips (≤ 59 s) der Lieblings-Stre
 
 ## Zeitplan
 
-**Jede Stunde** werden die Clips der letzten 12 Stunden durchsucht und die **Top 5 neuen** Clips empfohlen (Push-Benachrichtigung). Schon empfohlene Clips stehen in [empfohlen.txt](empfohlen.txt) und kommen nicht nochmal.
+**Jede Stunde** werden die Clips der **letzten 60 Minuten** durchsucht und die **Top 5 neuen** Clips empfohlen (Push-Benachrichtigung). Schon empfohlene Clips stehen in [empfohlen.txt](empfohlen.txt) und kommen nicht nochmal.
 
 ## Einrichtung
 

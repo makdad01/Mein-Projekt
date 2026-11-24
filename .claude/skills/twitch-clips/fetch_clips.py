@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Holt alle Twitch-Clips der letzten N Stunden (Standard 12) für die Streamer aus
+"""Holt alle Twitch-Clips der letzten N Stunden (Standard 1,25 = letzte Stunde + 15 min Überlappung, damit beim stündlichen Lauf nichts durchrutscht) für die Streamer aus
 tiktok/clips/config.json, filtert auf <= 59 s und gibt sie als JSON aus, sortiert nach
 Views pro Stunde. Der Zugangscode wird vom Proxy an api.twitch.tv angehängt.
 
@@ -9,7 +9,7 @@ import json, sys, urllib.request, urllib.parse, datetime as dt, pathlib
 
 ROOT = pathlib.Path(__file__).resolve().parents[3]
 cfg = json.load(open(ROOT / "tiktok/clips/config.json"))
-hours = float(sys.argv[1]) if len(sys.argv) > 1 else 12
+hours = float(sys.argv[1]) if len(sys.argv) > 1 else 1.25
 now = dt.datetime.now(dt.timezone.utc)
 start = now - dt.timedelta(hours=hours)
 fmt = lambda t: t.strftime("%Y-%m-%dT%H:%M:%SZ")
