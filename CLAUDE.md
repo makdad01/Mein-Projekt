@@ -15,3 +15,7 @@
 # Projekt
 
 - Ziel von `Mein-Projekt`: noch offen
+
+# Git
+
+- Wichtige Infos über Maki und das Projekt in dieser Datei festhalten und nach `main` committen und pushen.
