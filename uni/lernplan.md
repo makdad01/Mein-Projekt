@@ -4,7 +4,7 @@
 
 > **Annahmen (bitte korrigieren):**
 > - TikTok pausiert bis zu den Semesterferien – volle Konzentration auf die Uni.
-> - **Marktanalyse-Note:** Mid-Term-Quiz 30 % (23.11. ✅) · End-Quiz 30 % (Do 21.01.) · **Video-Präsentation 10 min 40 %** (Abgabe vermutlich 21.01. → trotzdem Ziel: fertig bis 03.01.).
+> - **Marktanalyse-Note:** Mid-Term-Quiz 30 % (23.11. ✅, geschätzt ca. 22 %) · End-Quiz 30 % (Do 21.01.) · **Video-Präsentation 40 %** (5er-Gruppe, je 10 min pro Person) (Abgabe vermutlich 21.01. → trotzdem Ziel: fertig bis 03.01.).
 > - **Schwierigkeit laut Maki:** BWL + Informatik I = leicht · Mathe = mittel · Informationstechnik = sehr schwer · **Elektrotechnik = extrem schwer** → ET und IT bekommen die meiste Zeit.
 > - Lernzeit neben den Vorlesungen: Phase 1 ca. **12 h/Woche**, Phase 3 ca. **25–30 h/Woche**.
 
@@ -44,7 +44,7 @@ Passend zum [Stundenplan](stundenplan.md): Gelernt wird in den Lücken und direk
 
 - **Altklausuren** für alle Fächer besorgen (Fachschaft, Moodle/Ilias, ältere Semester)
 - **Elektrotechnik + Informationstechnik:** Lücken aus dem Semester schließen, Formelsammlung bzw. Zusammenfassung anlegen – das sind deine schwersten Fächer, hier zählt jede Stunde
-- **Marktanalyse-Video (40 % der Note!)** bis 03.01. fertig: Inhalt steht bis 20.12., über Weihnachten Folien, Aufnahme und Schnitt
+- **Marktanalyse-Video (40 % der Note!)** bis 03.01. fertig: **Gruppentreffen vor dem 20.12.** (Themen aufteilen, einheitliche Folienvorlage, Abgabeformat klären), Inhalt steht bis 20.12., über Weihnachten eigene 10 min aufnehmen, danach zusammenschneiden
 - **Informatik I kurz vorziehen:** Zwischen Mathe (12.02.) und Informatik (15.02.) liegen nur **2 Tage**. Informatik ist für dich leicht – eine Altklausur rechnen reicht, um zu wissen, wo du stehst.
 
 ## Phase 3 – Klausurmodus (04.01. – 24.01.)
