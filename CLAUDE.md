@@ -2,7 +2,7 @@
 
 - **Name:** Maki
 - **Sprache:** Deutsch, per „du“
-- **Studium:** Wirtschaftsingenieurwesen Elektrotechnik, 1. Semester (WS 2026/27), erste Prüfungen ab ca. 24.01.2027
+- **Studium:** Wirtschaftsingenieurwesen Elektrotechnik, 1. Semester (WS 2026/27), Klausuren 25.01.–24.02.2027 (Termine in `uni/lernplan.md`)
 - **Abi:** 2,0
 - **Programmiererfahrung:** keine – Anfänger, alles verständlich erklären
 
