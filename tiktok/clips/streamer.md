@@ -5,5 +5,5 @@
 | Trymacs | `trymacs` | ⚠️ noch bestätigen |
 | Eligella | `eligella` | ⚠️ noch bestätigen |
 | MontanaBlack | `montanablack88` | ⚠️ noch bestätigen |
-| „Groat“ | ? | ❓ unklar – Maki fragen |
+| Rohat | `rohat` | ⚠️ Kanalname noch bestätigen |
 | Zarbex | `zarbex` | ⚠️ noch bestätigen |
