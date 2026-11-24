@@ -4,7 +4,7 @@
 
 > **Annahmen (bitte korrigieren):**
 > - TikTok pausiert bis zu den Semesterferien – volle Konzentration auf die Uni.
-> - **Marktanalyse-Note:** Mid-Term-Quiz 30 % (23.11. ✅) · End-Quiz 30 % (Do 21.01.) · **Video-Präsentation 10 min 40 %** (Abgabe offen → Ziel: fertig bis 03.01.).
+> - **Marktanalyse-Note:** Mid-Term-Quiz 30 % (23.11. ✅) · End-Quiz 30 % (Do 21.01.) · **Video-Präsentation 10 min 40 %** (Abgabe vermutlich 21.01. → trotzdem Ziel: fertig bis 03.01.).
 > - **Schwierigkeit laut Maki:** BWL + Informatik I = leicht · Mathe = mittel · Informationstechnik = sehr schwer · **Elektrotechnik = extrem schwer** → ET und IT bekommen die meiste Zeit.
 > - Lernzeit neben den Vorlesungen: Phase 1 ca. **12 h/Woche**, Phase 3 ca. **25–30 h/Woche**.
 
@@ -95,4 +95,4 @@ Erste Klausur ist **Informationstechnik am Mo 25.01.** – die hat jetzt Vorrang
 | Grundlagen der Elektrotechnik I – Praktikum 2 | Mi 09.12.2026 |
 | Marktanalyse – Mid-Term-Quiz (30 %) | Mo 23.11.2026 ✅ |
 | **Marktanalyse – End-Quiz (30 %)** | **Do 21.01.2027** |
-| Marktanalyse – Video-Präsentation 10 min (40 %) | Abgabe offen – Ziel: fertig bis 03.01.2027 |
+| Marktanalyse – Video-Präsentation 10 min (40 %) | Abgabe vermutlich Do 21.01.2027 (bestätigen) – Ziel: fertig bis 03.01.2027 |
