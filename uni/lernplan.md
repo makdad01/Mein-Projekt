@@ -4,7 +4,7 @@
 
 > **Annahmen (bitte korrigieren):**
 > - TikTok pausiert bis zu den Semesterferien – volle Konzentration auf die Uni.
-> - Marktanalyse: **Abschluss-Quiz am Do 21.01.2027** – Rechercheaufgaben/Projektarbeit bis 03.01. fertig, danach nur noch Quiz-Vorbereitung.
+> - **Marktanalyse-Note:** Mid-Term-Quiz 30 % (23.11. ✅) · End-Quiz 30 % (Do 21.01.) · **Video-Präsentation 10 min 40 %** (Abgabe offen → Ziel: fertig bis 03.01.).
 > - **Schwierigkeit laut Maki:** BWL + Informatik I = leicht · Mathe = mittel · Informationstechnik = sehr schwer · **Elektrotechnik = extrem schwer** → ET und IT bekommen die meiste Zeit.
 > - Lernzeit neben den Vorlesungen: Phase 1 ca. **12 h/Woche**, Phase 3 ca. **25–30 h/Woche**.
 
@@ -28,11 +28,11 @@ Passend zum [Stundenplan](stundenplan.md): Gelernt wird in den Lücken und direk
 | **Mi** | 08:00–15:45 | 16:30–18:30 | **Informatik I:** Übung nacharbeiten (1 h) · **Elektrotechnik:** Praktikum/Aufgaben nacharbeiten (1 h) | 2 |
 | **Do** | 08:00–18:45 mit Lücken | 10:00–12:00 + 14:00–15:00 (Lücken) | **Mathe I:** Übungsblatt fertig machen (1 h) · **Informationstechnik:** Vorlesung + Übung nacharbeiten (2 h) | 3 |
 | **Fr** | 08:00–16:45 (langer ET-Tag) | – | **frei** – nach dem Tag reicht's | 0 |
-| **Sa** | – | 11:00–15:00 | **Elektrotechnik:** Aufgaben (1 h) · **Informationstechnik:** Übungsaufgaben (1 h) · **Marktanalyse:** Projektarbeit (1,5 h) · **BWL:** Karteikarten (30 min) | 4 |
+| **Sa** | – | 11:00–15:00 | **Elektrotechnik:** Aufgaben (1 h) · **Informationstechnik:** Übungsaufgaben (1 h) · **Marktanalyse:** Video-Präsentation (1,5 h) · **BWL:** Karteikarten (30 min) | 4 |
 | **So** | – | – | **frei** | 0 |
 | | | | **Summe** | **12** |
 
-**Pro Fach und Woche:** Elektrotechnik 4 h · Informationstechnik 3 h · Mathe 2 h · Informatik I 1 h · Marktanalyse 1,5 h · BWL 0,5 h
+**Pro Fach und Woche:** Elektrotechnik 4 h · Informationstechnik 3 h · Mathe 2 h · Informatik I 1 h · Marktanalyse (Video) 1,5 h · BWL 0,5 h
 
 > Die GET-Praktikumsblöcke sind nicht jede Woche – die Donnerstags-Lücken bleiben frei.
 
@@ -44,7 +44,7 @@ Passend zum [Stundenplan](stundenplan.md): Gelernt wird in den Lücken und direk
 
 - **Altklausuren** für alle Fächer besorgen (Fachschaft, Moodle/Ilias, ältere Semester)
 - **Elektrotechnik + Informationstechnik:** Lücken aus dem Semester schließen, Formelsammlung bzw. Zusammenfassung anlegen – das sind deine schwersten Fächer, hier zählt jede Stunde
-- **Marktanalyse:** Rechercheaufgaben/Projektarbeit bis 03.01. abschließen – das Quiz am 21.01. liegt mitten in der IT-Woche
+- **Marktanalyse-Video (40 % der Note!)** bis 03.01. fertig: Inhalt steht bis 20.12., über Weihnachten Folien, Aufnahme und Schnitt
 - **Informatik I kurz vorziehen:** Zwischen Mathe (12.02.) und Informatik (15.02.) liegen nur **2 Tage**. Informatik ist für dich leicht – eine Altklausur rechnen reicht, um zu wissen, wo du stehst.
 
 ## Phase 3 – Klausurmodus (04.01. – 24.01.)
@@ -93,5 +93,6 @@ Erste Klausur ist **Informationstechnik am Mo 25.01.** – die hat jetzt Vorrang
 | Grundlagen der Informatik I | **Mo 15.02.2027** |
 | Grundlagen der BWL | **Mi 24.02.2027** |
 | Grundlagen der Elektrotechnik I – Praktikum 2 | Mi 09.12.2026 |
-| **Marktanalyse – Abschluss-Quiz** | **Do 21.01.2027** |
-| Marktanalyse – Rechercheaufgaben/Projektarbeit | Ziel: fertig bis 03.01.2027 |
+| Marktanalyse – Mid-Term-Quiz (30 %) | Mo 23.11.2026 ✅ |
+| **Marktanalyse – End-Quiz (30 %)** | **Do 21.01.2027** |
+| Marktanalyse – Video-Präsentation 10 min (40 %) | Abgabe offen – Ziel: fertig bis 03.01.2027 |
