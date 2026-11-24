@@ -21,6 +21,8 @@
   2. **TikTok** (`tiktok/`): Account mit ca. 71.000 Followern (Stand Nov. 2026, aktuell keine Videos online) mit Comedy-Content zu einer Karriere mit viel Geld und Kooperationen ausbauen
   3. **Webseite & Shop** (`shop/`): später eine eigene Webseite aufbauen und dort Produkte vermarkten
 
+Für TikTok-Skripte den Skill `tiktok-skript` nutzen (`.claude/skills/tiktok-skript/`).
+
 Details zu jedem Bereich stehen in der `README.md` des jeweiligen Ordners.
 
 # Git
