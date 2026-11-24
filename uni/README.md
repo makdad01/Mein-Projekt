@@ -19,6 +19,8 @@ Ziel: Studium Wirtschaftsingenieurwesen Elektrotechnik mit dem bestmöglichen No
 | Elektrotechnik | Klausur | offen |
 | Marktanalyse | Projektarbeit (Rechercheaufgaben), keine Klausur | Abgabe offen |
 
+- **Stundenplan:** [stundenplan.md](stundenplan.md)
+
 ## Offene Punkte
 
 - Genaue Prüfungstermine eintragen
