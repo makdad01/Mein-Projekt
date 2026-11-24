@@ -9,3 +9,10 @@ Die Twitch-IDs stehen in [config.json](config.json) – neue Streamer dort **und
 | MontanaBlack | `montanablack88` | 45044816 |
 | Rohat | `rohat` | 130299361 |
 | Zarbex | `zarbex` | 403594122 |
+| Coach Lim | `coachlim` | 51653974 |
+| Papaplatte | `papaplatte` | 50985620 |
+| Knossi | `therealknossi` | 71588578 |
+| MckyTV | `mckytv` | 101572475 |
+| Mert Abi Mula | `mertabimula` | 463204522 |
+| Ali Bumaye | `alibumayetv` | 803142740 |
+| Daniel Slump | `danielslump` | 637227911 |
