@@ -41,3 +41,23 @@ Zwei Comedy-Sketches, analysiert im Nov. 2026. Beide im Hochformat (9:16), mit d
 | **Kamera** | Handy, Selfie-Perspektive oder Gegenüber, nahe Gesichter, viele harte Schnitte zwischen den Personen |
 | **Besetzung** | 2–3 Freunde, feste Typen (der Angeber, der Ruhige, der Leidende) |
 | **Ende** | Abrupt nach der Pointe, kein Outro |
+
+## Video 3 – @wessamq: „Navi aus, gib dein Handy“ (ca. 1:06, arabisch)
+
+Von Maki als Beispiel geschickt: **„So etwas habe ich mir vorgestellt.“**
+
+**Ort:** fahrendes Auto, Paar vorne. Nur **2 Darsteller**.
+
+**Ablauf (sinngemäß übersetzt)**
+1. **Hook (0–3 s):** „Schatz, das Navi geht bei mir nicht. Gib mir dein Handy.“
+2. **Ausreden (3–20 s):** „Ich kenn den Weg.“ – „Nein, wir verfahren uns.“ Sie fragt: „Warum gibst du's mir nicht? Was versteckst du?“
+3. **Gehirn (ab ca. 10 s):** Derselbe Schauspieler in **anderem Hemd**, Texteinblendung **„Mein Gehirn:“**, redet direkt in die Kamera und schlägt immer absurdere Lösungen vor („Ich hab alle Szenarien analysiert …“).
+4. **Übergabe (ca. 35 s):** Er gibt nach.
+5. **Twist 1 (ca. 43 s):** Taschenrechner offen: „Du brauchst einen Taschenrechner für 5 + 3?“ – „Du weißt, ich bin nicht gut in Mathe.“
+6. **Twist 2 (ca. 53 s):** „Egal, ich geh auf Instagram.“ Das Geheimnis wird **nicht** aufgelöst, Zuschauer denken es sich. Sofort Schluss.
+
+**Was Maki daran gefällt (Learnings für die Skripte)**
+- **Kurz und schnell:** viele sehr kurze Sätze, schnelle Schnitte, kaum Pausen.
+- **Nur 2 Leute nötig:** die „innere Stimme“ spielt der Hauptdarsteller selbst, mit Outfitwechsel + Texteinblendung.
+- **Das Geheimnis bleibt offen:** Andeuten reicht, die Pointe passiert im Kopf der Zuschauer.
+- **Echte Paar-/Alltagsdynamik** statt übertriebener Requisiten.

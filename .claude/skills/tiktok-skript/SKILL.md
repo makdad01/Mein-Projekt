@@ -83,6 +83,13 @@ Speichere das Skript als `tiktok/skripte/JJJJ-MM-TT-kurzer-titel.md`, committe e
 | **Summe** | **…** |
 ```
 
+## Was Maki mag (aus Feedback)
+- **Kurz und schnell:** knackige Sätze, schnelle Schnitte. Lieber 70–90 s mit Tempo als 2 Minuten mit Längen.
+- **Innere Stimme / „Mein Gehirn“:** spielt Maki selbst mit Outfitwechsel und Texteinblendung – kein extra Darsteller dafür.
+- **Nicht alles auflösen:** Ein Geheimnis darf offen bleiben, die Zuschauer denken es sich selbst.
+- Vorbild dafür: Video 3 (@wessamq) in `tiktok/analyse-vorbilder.md`.
+- Nicht gut ankam: Version 1 von „Navi geht aus“ (zu lang, Gehirn als dritte Person, Ende zu ausgeschrieben).
+
 ## Tipps, die ins Skript gehören
 - **Stumme Reaktionen ausschreiben**: was die Person tut, welcher Gesichtsausdruck, wie viele Sekunden. Daraus entsteht die Hälfte des Witzes.
 - **Kamera pro Szene angeben**: Selfie, Gegenüber, POV, Detail (z. B. Hand am Terminal).

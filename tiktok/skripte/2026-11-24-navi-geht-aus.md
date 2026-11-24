@@ -1,113 +1,93 @@
-# Navi geht aus
+# Navi geht aus (Version 2)
 
-**Prämisse:** Im Auto geht das Navi aus, die Freundin will Makis Handy – sein Gehirn auf der Rückbank weiß genau, warum das keine gute Idee ist.
-**Geschätzte Länge:** ca. 1:53
+**Prämisse:** Das Navi geht aus, die Freundin will Makis Handy – und Makis Gehirn rechnet in Echtzeit durch, wie er da wieder rauskommt.
+**Geschätzte Länge:** ca. 1:15
 **Rollen:**
 - **Maki** – fährt, will cool bleiben, hat was zu verheimlichen
-- **Lea** (Freundin, Name frei wählbar) – Beifahrerin, merkt alles
-- **Gehirn** (Freund) – sitzt auf der Rückbank, nur Maki kann ihn hören. Lea sieht und hört ihn **nie**, sie reagiert nie auf ihn.
+- **Lea** (Freundin, Name frei wählbar) – Beifahrerin, lässt nicht locker
+- **Gehirn** – wird **auch von Maki gespielt**: anderes Hemd/Pulli, gleicher Fahrersitz, guckt direkt in die Kamera. Im Schnitt oben die Texteinblendung **„Mein Gehirn:“**
 
-**Ort:** Auto, Maki auf dem Fahrersitz, Lea Beifahrersitz, Gehirn mittig auf der Rückbank
-**Requisiten:** Makis Handy in der Handyhalterung (zeigt Navi), Zettel mit „GEHIRN“ für den Pulli des Gehirns, optional Kopfhörer-Headset fürs Gehirn
-**Outfit-Tipp:** Gehirn in Rosa/Pink (Mütze oder Pulli) + Zettel „GEHIRN“ auf der Brust – sofort klar, wer er ist.
+**Ort:** Auto (steht!), Maki Fahrersitz, Lea Beifahrersitz
+**Requisiten:** Makis Handy, Taschenrechner-App mit „2 + 4“ vorbereitet, ein zweites Oberteil fürs Gehirn
+**Outfit-Tipp:** Maki normal z. B. dunkler Pulli, Gehirn helles Hemd – sofort unterscheidbar.
 
-> ⚠️ **Sicherheit:** Alles im **stehenden Auto** drehen (Motor aus, Fahrbewegung nur spielen). Maki fasst während der „Fahrt“ das Handy nicht an – das ist Lea. Handy am Steuer ist verboten und kostet dich Punkte, nicht nur Follower.
+> ⚠️ **Sicherheit:** Im **stehenden Auto** drehen, Motor aus, Fahren nur spielen.
 
 ## Skript
 
-### Szene 1 – Hook (0:00–0:05)
-**Kamera:** Gegenüber vom Armaturenbrett, Maki und Lea im Bild, Gehirn hinten in der Mitte sichtbar
-*(Navi-Stimme / Lea liest vor: „Akku schwach.“ – Bildschirm wird schwarz)*
-**LEA:** „Ey, dein Navi ist aus. Gib mal dein Handy, ich mach's an meinem Ladekabel.“
-*(stumme Reaktion: MAKI erstarrt, Hände fest am Lenkrad – 2 s)*
+### Szene 1 – Hook (0:00–0:06)
+**Kamera:** Selfie-Perspektive auf Lea, sie tippt genervt auf ihr Handy
+**LEA:** „Schatz, mein Navi lädt nicht. Gib mal dein Handy.“
+*(stumme Reaktion: MAKI – Schnitt auf ihn, Blick bleibt starr auf der Straße – 2 s)*
 
-### Szene 2 – Setup (0:05–0:16)
-**Kamera:** Nah auf Gehirn, beugt sich langsam zwischen die Sitze nach vorne
-**GEHIRN:** „Bruder. Nein. Auf keinen Fall. Du weißt ganz genau warum.“
-**MAKI** *(leise zu sich)*: „Ich weiß …“
-**LEA:** „Was weißt du?“
-**MAKI:** „Ich weiß … den Weg. Ich weiß den Weg, Schatz.“
+### Szene 2 – Setup (0:06–0:16)
+**Kamera:** Maki nah, er lacht zu locker
+**MAKI:** „Brauchst du nicht, Schatz. Ich kenn den Weg.“
+**LEA:** „Du hast dich letzte Woche im Lidl-Parkplatz verfahren.“
+**MAKI:** „Der war neu gebaut.“
 
-### Szene 3 – Eskalation 1: „Ich kenn den Weg“ (0:16–0:30)
-**Kamera:** Gegenüber, beide vorne
-**LEA:** „Du warst noch nie bei meiner Tante.“
-**GEHIRN:** „Sag links. Links ist immer gut.“
-**MAKI:** „Links.“
-*(Schnitt – Zeit vergeht)*
-**LEA:** „Das ist der gleiche Späti wie vor fünf Minuten. Und davor.“
-*(stumme Reaktion: GEHIRN schlägt sich die Hand vor die Stirn – 2 s)*
+### Szene 3 – Gehirn meldet sich (0:16–0:27)
+**Kamera:** GEHIRN frontal, Texteinblendung „Mein Gehirn:“, hebt den Zeigefinger
+**GEHIRN:** „Bruder, ich hab eine Kosten-Nutzen-Analyse gemacht. Handy geben: Beziehung weg. Handy aus dem Fenster werfen: neunhundert Euro. Wir werfen.“
+*(stumme Reaktion: MAKI guckt kurz aufs Fenster, dann wieder nach vorne – 2 s)*
 
-### Szene 4 – Eskalation 2: „Akku leer“ (0:30–0:43)
-**Kamera:** Nah auf Maki, Gehirn flüstert ihm von hinten ins Ohr
-**GEHIRN:** „Sag, dein Akku ist komplett leer. Tot. Beerdigt.“
-**MAKI:** „Mein Akku ist leer, das bringt nichts.“
-**LEA** *(tippt aufs Handy, Bildschirm geht an)*: „Siebenundachtzig Prozent.“
-*(stumme Reaktion: MAKI und GEHIRN gucken gleichzeitig langsam aus dem Fenster – 3 s)*
+### Szene 4 – Eskalation 1 (0:27–0:36)
+**Kamera:** Lea, Hand ausgestreckt
+**LEA:** „Warum gibst du mir dein Handy nicht? Du fährst, ich hab die Hände frei.“
+**GEHIRN:** „Sag, du hast eine Handy-Allergie. Ganz frisch. Vom Arzt.“
+**MAKI:** „Ich … der Arzt meinte …“
+**LEA:** „Maki.“
 
-### Szene 5 – Eskalation 3: Ablenkung (0:43–0:56)
-**Kamera:** Gegenüber
-**GEHIRN:** „Lenk sie ab! Mach ihr ein Kompliment!“
-**MAKI:** „Schatz … deine Augenbrauen sind heute … sehr … symmetrisch.“
-**LEA:** „Gib. Das. Handy.“
-**GEHIRN** *(lehnt sich zurück, verschränkt die Arme)*: „Okay. Ich hab alles versucht. Ich bin nur ein Gehirn.“
+### Szene 5 – Eskalation 2 (0:36–0:46)
+**Kamera:** Lea, kneift die Augen zusammen
+**LEA:** „Was versteckst du?“
+**GEHIRN** *(panisch, wedelt mit den Händen vor der Kamera)*: „Plan C! Täusch einen Anruf vor! Ruf dich selbst an! Egal wie!“
+**MAKI** *(hält sich die Hand ans Ohr, ohne Handy)*: „Hallo? … Mama? … Ja, ich fahr grad.“
+*(stumme Reaktion: LEA guckt auf seine leere Hand – 2 s)*
 
-### Szene 6 – Die Übergabe (0:56–1:04)
-**Kamera:** Detail auf Makis Hand, die das Handy in Zeitlupe rüberreicht
-*(stumme Aktion: MAKI reicht das Handy extrem langsam rüber, zieht es einmal kurz zurück, Lea reißt es ihm aus der Hand – 4 s)*
-**GEHIRN** *(flüstert)*: „Es war schön mit dir.“
+### Szene 6 – Übergabe (0:46–0:52)
+**Kamera:** Maki, er gibt auf
+**MAKI:** „Okay. Okay. Nimm.“
+**GEHIRN** *(fasst sich an die Brust)*: „Ich will dich nur wissen lassen: Ich war dagegen.“
 
-### Szene 7 – Twist 1: Der Taschenrechner (1:04–1:24)
-**Kamera:** Über Leas Schulter auf den Bildschirm – zuletzt geöffnete App ist der **Taschenrechner**, darauf steht groß **„2 + 4 = 6“**
-*(stumme Reaktion: LEA guckt auf den Bildschirm, dann langsam zu Maki – 3 s)*
-**LEA:** „Du studierst Wirtschaftsingenieur.“
-**MAKI:** „Ja.“
-**LEA:** „Und rechnest zwei plus vier mit dem Taschenrechner?“
-**MAKI:** „Ich wollte nur sichergehen, dass es noch sechs ist. Die ändern da manchmal Sachen.“
-*(stumme Reaktion: GEHIRN zeigt mit beiden Daumen nach unten in die Kamera – 2 s)*
-**GEHIRN:** „Das war nicht mal das, was wir verstecken wollten.“
+### Szene 7 – Twist 1: Taschenrechner (0:52–1:05)
+**Kamera:** Lea hält das Handy in die Kamera – Taschenrechner offen, groß **„2 + 4“**
+**LEA:** „Du brauchst einen Taschenrechner für zwei plus vier?“
+**MAKI:** „Guck mich nicht so an. Ich bin Wirtschaftsingenieur, nicht Mathematiker.“
+**GEHIRN:** „Das war ich. Sorry. Montagmorgen.“
 
-### Szene 8 – Twist 2: Instagram (1:24–1:44)
-**Kamera:** Nah auf Lea
-*(Handy vibriert – Lea guckt drauf)*
-**LEA:** „Oh. Eine Insta-Benachrichtigung.“
-*(stumme Reaktion: MAKI und GEHIRN reißen gleichzeitig die Augen auf, Kamera schwenkt schnell zwischen beiden hin und her – 3 s)*
-**LEA** *(tippt drauf, liest langsam vor)*: „‚Du hast ein Bild geliked.‘ Von deiner Ex. Von 2019. Um drei Uhr nachts.“
-**MAKI:** „Schatz, das war … der Daumen. Der Daumen ist abgerutscht. Der Daumen hat ein Eigenleben.“
-*(stumme Reaktion: LEA guckt Maki an, ohne zu blinzeln – 4 s)*
-
-### Szene 9 – Nachklang (1:44–1:53)
-**Kamera:** Gegenüber, alle drei im Bild
-*(stumme Aktion: GEHIRN nimmt langsam den „GEHIRN“-Zettel ab, öffnet die hintere Tür und steigt aus – 4 s)*
-**GEHIRN** *(draußen, durchs Fenster)*: „Ich such mir einen neuen Kopf.“
+### Szene 8 – Twist 2: Instagram (1:05–1:15)
+**Kamera:** Lea, lächelt böse
+**LEA:** „Egal. Ich geh kurz auf Insta.“
+*(stumme Reaktion: MAKI starrt geradeaus, schluckt – 2 s)*
+**Kamera:** GEHIRN – zieht sich die Kapuze/Mütze über die Augen, Texteinblendung **„Gehirn ist offline“** *(2 s)*
 *(Schnitt – Ende)*
 
 ## Drehplan
 - **Reihenfolge zum Drehen:**
-  1. Alle Einstellungen **„Gegenüber“** am Stück (Szenen 1, 3, 5, 9) – Handy einmal am Armaturenbrett fixieren
-  2. Alle **Nahaufnahmen Gehirn** (Szene 2, 4) – Handy auf den Beifahrersitz nach hinten gerichtet
-  3. **Nahaufnahmen Lea** (Szene 8) und **Maki** (Szene 4)
-  4. **Details:** Handy-Übergabe (Szene 6) und Bildschirm mit Taschenrechner (Szene 7)
-- **Vorbereiten:** Vor dem Dreh im Taschenrechner „2 + 4“ eintippen und App offen lassen, damit sie beim Entsperren direkt erscheint. Für Szene 8 einen **Fake-Screenshot** oder gestellten Account nutzen – keine echte Ex, keine echten Profile zeigen.
+  1. Alle **Lea-Einstellungen** am Stück (Szenen 1, 4, 5, 7, 8)
+  2. Alle **Maki-Einstellungen** am Stück (Szenen 1, 2, 5, 6, 7, 8)
+  3. **Outfit wechseln** → alle **Gehirn-Einstellungen** am Stück (Szenen 3, 4, 5, 6, 7, 8)
+- **Vorbereiten:** „2 + 4“ in den Taschenrechner tippen und App offen lassen.
+- **Im Schnitt:** Bei jedem Gehirn-Shot oben „Mein Gehirn:“ einblenden, am Ende „Gehirn ist offline“.
 - **Wichtigste Reaktions-Shots (je 3–4 Takes):**
-  - Maki erstarrt (Szene 1)
-  - Maki + Gehirn gucken aus dem Fenster (Szene 4)
-  - Lea guckt Maki ohne Blinzeln an (Szene 8)
-  - Gehirn steigt aus (Szene 9)
+  - Makis starrer Blick (Szene 1)
+  - Lea guckt auf die leere Hand (Szene 5)
+  - Makis Schlucken am Ende (Szene 8)
 
 ## Caption & Hashtags
-**Caption:** Mein Gehirn hat mich gewarnt 💀
-**Hashtags:** #comedy #sketch #fyp #beziehung #navi #studentlife
+**Caption:** Mein Gehirn hat alles versucht 😭
+**Hashtags:** #comedy #sketch #fyp #beziehung #paar #wirtschaftsingenieur
 
 ## Längen-Check
 | Szene | Sekunden |
 |---|---|
-| 1 – Hook | 5 |
-| 2 – Setup | 11 |
-| 3 – „Ich kenn den Weg“ | 14 |
-| 4 – „Akku leer“ | 13 |
-| 5 – Ablenkung | 13 |
-| 6 – Übergabe | 8 |
-| 7 – Taschenrechner | 20 |
-| 8 – Instagram | 20 |
-| 9 – Nachklang | 9 |
-| **Summe** | **113 s ≈ 1:53** |
+| 1 – Hook | 6 |
+| 2 – Setup | 10 |
+| 3 – Gehirn meldet sich | 11 |
+| 4 – Eskalation 1 | 9 |
+| 5 – Eskalation 2 | 10 |
+| 6 – Übergabe | 6 |
+| 7 – Taschenrechner | 13 |
+| 8 – Instagram | 10 |
+| **Summe** | **75 s ≈ 1:15** |
