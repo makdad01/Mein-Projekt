@@ -20,3 +20,4 @@ Die Twitch-IDs stehen in [config.json](config.json) – neue Streamer dort **und
 | HamedLoco | `hamedloco` | 470335253 |
 | Niklas Wilson | `niklaswilson` | 501438035 |
 | Sidney Eweka | `sidneyeweka` | 135177864 |
+| Delarue (zweiter Kanal) | `delarue` | 439522902 |
