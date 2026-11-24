@@ -1,10 +1,10 @@
 # Lernplan WS 2026/27 – bis zur Prüfungsphase
 
-**Stand:** 24.11.2026 · **Erste Klausur:** Mo 25.01.2027 · **Letzte Klausur:** Mi 24.02.2027
+**Stand:** 24.11.2026 · **Marktanalyse-Quiz:** Do 21.01.2027 · **Erste Klausur:** Mo 25.01.2027 · **Letzte Klausur:** Mi 24.02.2027
 
 > **Annahmen (bitte korrigieren):**
 > - TikTok pausiert bis zu den Semesterferien – volle Konzentration auf die Uni.
-> - Marktanalyse hat **kein festes Abgabedatum** → Ziel: bis Ende der Weihnachtsferien (03.01.) fertig, damit sie die Klausurphase nicht stört.
+> - Marktanalyse: **Abschluss-Quiz am Do 21.01.2027** – Rechercheaufgaben/Projektarbeit bis 03.01. fertig, danach nur noch Quiz-Vorbereitung.
 > - **Schwierigkeit laut Maki:** BWL + Informatik I = leicht · Mathe = mittel · Informationstechnik = sehr schwer · **Elektrotechnik = extrem schwer** → ET und IT bekommen die meiste Zeit.
 > - Lernzeit neben den Vorlesungen: Phase 1 ca. **12 h/Woche**, Phase 3 ca. **25–30 h/Woche**.
 
@@ -44,7 +44,7 @@ Passend zum [Stundenplan](stundenplan.md): Gelernt wird in den Lücken und direk
 
 - **Altklausuren** für alle Fächer besorgen (Fachschaft, Moodle/Ilias, ältere Semester)
 - **Elektrotechnik + Informationstechnik:** Lücken aus dem Semester schließen, Formelsammlung bzw. Zusammenfassung anlegen – das sind deine schwersten Fächer, hier zählt jede Stunde
-- **Marktanalyse fertig machen** (kein festes Abgabedatum – trotzdem bis 03.01. abschließen, damit sie im Januar nicht stört)
+- **Marktanalyse:** Rechercheaufgaben/Projektarbeit bis 03.01. abschließen – das Quiz am 21.01. liegt mitten in der IT-Woche
 - **Informatik I kurz vorziehen:** Zwischen Mathe (12.02.) und Informatik (15.02.) liegen nur **2 Tage**. Informatik ist für dich leicht – eine Altklausur rechnen reicht, um zu wissen, wo du stehst.
 
 ## Phase 3 – Klausurmodus (04.01. – 24.01.)
@@ -54,7 +54,10 @@ Erste Klausur ist **Informationstechnik am Mo 25.01.** – die hat jetzt Vorrang
 | Zeitraum | Schwerpunkt | Aufteilung pro Tag |
 |---|---|---|
 | **04.01. – 17.01.** | Informationstechnik + Elektrotechnik | ca. 2 h IT · 2 h ET · 30 min Mathe (Übungsblätter weiter mitrechnen) |
+| **Sa 09.01. + Sa 16.01.** | + Marktanalyse | je 2 h Quiz-Vorbereitung: Inhalte der Übungen zusammenfassen, Begriffe als Karteikarten |
 | **18.01. – 24.01.** | **Informationstechnik** | 4 h IT: Altklausuren unter Zeitdruck, Fehlerliste. Dazu 1 h ET, damit nichts verloren geht |
+| **Di 19.01. + Mi 20.01.** | + Marktanalyse | je 1,5 h Karteikarten wiederholen (statt der ET-Stunde) |
+| **Do 21.01.** | **Marktanalyse-Quiz** | danach direkt zurück zu IT |
 
 - Jeden Tag mindestens **eine Altklausur-Aufgabe unter Zeitdruck**
 - Fehler in einer **Fehlerliste** sammeln und am nächsten Tag nochmal rechnen
@@ -90,4 +93,5 @@ Erste Klausur ist **Informationstechnik am Mo 25.01.** – die hat jetzt Vorrang
 | Grundlagen der Informatik I | **Mo 15.02.2027** |
 | Grundlagen der BWL | **Mi 24.02.2027** |
 | Grundlagen der Elektrotechnik I – Praktikum 2 | Mi 09.12.2026 |
-| Marktanalyse (Projektarbeit) | kein festes Datum – Ziel: fertig bis 03.01.2027 |
+| **Marktanalyse – Abschluss-Quiz** | **Do 21.01.2027** |
+| Marktanalyse – Rechercheaufgaben/Projektarbeit | Ziel: fertig bis 03.01.2027 |
