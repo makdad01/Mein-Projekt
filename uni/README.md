@@ -19,14 +19,14 @@ Ziel: Studium Wirtschaftsingenieurwesen Elektrotechnik mit dem bestmöglichen No
 | Grundlagen der Informatik I | Klausur | Mo 15.02.2027 |
 | Grundlagen der Informationstechnik | Klausur | Mo 25.01.2027 |
 | Grundlagen der Elektrotechnik I | Klausur | Di 02.02.2027 |
-| Marktanalyse | Mid-Term-Quiz (30 %) + End-Quiz (30 %) + Video-Präsentation in 5er-Gruppe, je 10 min pro Person (40 %) – keine Klausur | Mid-Term: Mo 23.11.2026 ✅ (Schätzung ca. 22 %, Ergebnis noch offen) · End-Quiz: Do 21.01.2027 · Video: Abgabe vermutlich Do 21.01.2027 (noch bestätigen), Bewertungskriterien noch nicht bekannt |
+| Marktanalyse | Mid-Term-Quiz (30 %) + End-Quiz (30 %) + Video-Präsentation in 5er-Gruppe, je 10 min pro Person (40 %) – keine Klausur | Mid-Term: Mo 23.11.2026 ✅ (geschätzt ca. 73 % im Quiz ≈ 22 von 30 Notenprozent, offizielles Ergebnis noch offen) · End-Quiz: Do 21.01.2027 · Video: Abgabe vermutlich Do 21.01.2027 (noch bestätigen), Bewertungskriterien noch nicht bekannt |
 | GET I – Praktikum | 2 Termine: 1. erledigt, 2. am Mi 09.12.2026 | – |
 
 - **Stundenplan:** [stundenplan.md](stundenplan.md)
 
 ## Offene Punkte
 
-- Marktanalyse: Abgabedatum der Video-Präsentation bestätigen (vermutlich 21.01.), Thema + Bewertungskriterien klären, echtes Ergebnis Mid-Term-Quiz eintragen
+- Marktanalyse: Abgabedatum der Video-Präsentation bestätigen (vermutlich 21.01.), Thema + Bewertungskriterien klären, offizielles Ergebnis Mid-Term-Quiz bestätigen
 
 - Genaue Prüfungstermine eintragen
 - Lernplan an genaue Termine und Schwierigkeit anpassen → [lernplan.md](lernplan.md)

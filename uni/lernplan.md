@@ -4,7 +4,7 @@
 
 > **Annahmen (bitte korrigieren):**
 > - TikTok pausiert bis zu den Semesterferien – volle Konzentration auf die Uni.
-> - **Marktanalyse-Note:** Mid-Term-Quiz 30 % (23.11. ✅, geschätzt ca. 22 %) · End-Quiz 30 % (Do 21.01.) · **Video-Präsentation 40 %** (5er-Gruppe, je 10 min pro Person) (Abgabe vermutlich 21.01. → trotzdem Ziel: fertig bis 03.01.).
+> - **Marktanalyse-Note:** Mid-Term-Quiz 30 % (23.11. ✅, geschätzt ca. 73 % ≈ 22 von 30 Punkten) · End-Quiz 30 % (Do 21.01.) · **Video-Präsentation 40 %** (5er-Gruppe, je 10 min pro Person) (Abgabe vermutlich 21.01. → trotzdem Ziel: fertig bis 03.01.).
 > - **Schwierigkeit laut Maki:** BWL + Informatik I = leicht · Mathe = mittel · Informationstechnik = sehr schwer · **Elektrotechnik = extrem schwer** → ET und IT bekommen die meiste Zeit.
 > - Lernzeit neben den Vorlesungen: Phase 1 ca. **12 h/Woche**, Phase 3 ca. **25–30 h/Woche**.
 
