@@ -1,9 +1,11 @@
 # Streamer-Liste für Twitch-Clips
 
-| Name (wie Maki ihn nennt) | Twitch-Kanal | Status |
+Die Twitch-IDs stehen in [config.json](config.json) – neue Streamer dort **und** hier eintragen.
+
+| Streamer | Twitch-Kanal | Twitch-ID |
 |---|---|---|
-| Trymacs | `trymacs` | ⚠️ noch bestätigen |
-| Eligella | `eligella` | ⚠️ noch bestätigen |
-| MontanaBlack | `montanablack88` | ⚠️ noch bestätigen |
-| Rohat | `rohat` | ⚠️ Kanalname noch bestätigen |
-| Zarbex | `zarbex` | ⚠️ noch bestätigen |
+| Trymacs | `trymacs` | 64342766 |
+| Eligella | `eligella` | 159536522 |
+| MontanaBlack | `montanablack88` | 45044816 |
+| Rohat | `rohat` | 130299361 |
+| Zarbex | `zarbex` | 403594122 |

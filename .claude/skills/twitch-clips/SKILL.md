@@ -21,8 +21,10 @@ Gepflegt in `tiktok/clips/streamer.md`. Nur diese Kanäle durchsuchen, außer Ma
 
 ## Ablauf
 
-1. Clips der letzten 12 h über die Twitch-API (`/helix/clips` mit `broadcaster_id`, `started_at`, `ended_at`) für jeden Streamer abrufen.
-   Zugang: siehe `tiktok/clips/README.md` (Abschnitt „Einrichtung“).
+1. Clips abrufen: `python3 .claude/skills/twitch-clips/fetch_clips.py > <scratchpad>/clips.json`
+   Gibt alle Clips ≤ 59 s der letzten 12 h als JSON aus, sortiert nach Views pro Stunde.
+   Der Twitch-Zugangscode wird automatisch vom Proxy an api.twitch.tv angehängt.
+   Bei **Fehler 401**: Code abgelaufen → Maki benachrichtigen, Anleitung in `tiktok/clips/README.md` („Code erneuern“).
 2. Filtern: Dauer ≤ 59 s.
 3. Jeden Clip mit dem **Viral-Score** bewerten (unten).
 4. Top 3–5 auswählen – höchstens 2 vom selben Streamer, damit es abwechslungsreich bleibt.
@@ -40,6 +42,11 @@ Gepflegt in `tiktok/clips/streamer.md`. Nur diese Kanäle durchsuchen, außer Ma
 | **Learnings-Bonus** | 10 | passt zu Mustern, die laut `learnings.md` funktionieren |
 
 Lies **vor jedem Lauf** `tiktok/clips/learnings.md` und wende die Learnings an.
+
+## Grenzen (ehrlich angeben)
+- Du kannst die Clips **nicht anschauen**, nur Titel, Länge und Zahlen sehen. Hook und Kontext sind aus dem Titel geschätzt – das im Ergebnis dazuschreiben.
+- Twitch zählt Views verzögert. Sehr junge Clips (< 1 h) nicht nur nach Views pro Stunde bewerten.
+- Clips mit dem Stream-Titel als Clip-Titel (z. B. „[DROPS] …“) sind meist unbenannt und schwer einzuschätzen → nur nehmen, wenn die Zahlen klar herausstechen.
 
 ## Ausgabeformat
 

@@ -15,10 +15,17 @@ Zwei Läufe pro Tag (deutsche Zeit), jeweils für die letzten 12 Stunden:
 | **ca. 08:45** | Abend- und Nachtstreams (ca. 20:45–08:45) | Die meisten großen Streams laufen abends/nachts – morgens liegen die besten Clips bereit, Posten mittags/nachmittags |
 | **ca. 20:45** | Tagesstreams (ca. 08:45–20:45) | Clips vom Nachmittag frisch zur Prime-Time am Abend posten |
 
-## Einrichtung (Stand: noch nicht fertig)
+## Einrichtung
 
-- [ ] Streamer-Liste bestätigen
+- [x] Streamer-Liste bestätigen
 - [x] Twitch-Entwickler-App anlegen (dev.twitch.tv/console) → Client-ID in [config.json](config.json)
-- [ ] Netzwerkzugriff auf `api.twitch.tv` und `id.twitch.tv` freigeben
-- [ ] Zugangsschlüssel sicher hinterlegen
+- [x] Zugangscode sicher in der Umgebung hinterlegt (gilt für api.twitch.tv)
 - [ ] Automatischen Lauf um ca. 08:45 und 20:45 einrichten
+
+## Code erneuern (wenn Fehler 401 kommt)
+
+Der Twitch-Zugangscode läuft irgendwann ab. Dann:
+1. Diesen Link öffnen und bei Twitch auf „Autorisieren“ tippen:
+   https://id.twitch.tv/oauth2/authorize?response_type=token&client_id=ufy4jblnij38nzh9igcg8zt9lrfyx0&redirect_uri=https://localhost&scope=
+2. Auf der Fehlerseite in die **Adresszeile** schauen: `https://localhost/#access_token=XXXX&scope=…`
+3. Claude sagen, dass ein neuer Code da ist → Claude öffnet das sichere Formular → nur `XXXX` eintragen.
