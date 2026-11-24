@@ -2,7 +2,6 @@
 
 Ziel: später eine eigene Webseite aufbauen und dort Produkte vermarkten.
 
-## Offene Punkte
+## Stand (Nov. 2026)
 
-- Welche Produkte? (eigene, Merch, digitale Produkte, Affiliate)
-- Zeitplan festlegen
+- Noch keine Produktidee – Maki meldet sich, sobald es eine gibt.
