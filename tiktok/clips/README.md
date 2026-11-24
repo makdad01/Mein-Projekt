@@ -20,7 +20,7 @@ Zwei Läufe pro Tag (deutsche Zeit), jeweils für die letzten 12 Stunden:
 - [x] Streamer-Liste bestätigen
 - [x] Twitch-Entwickler-App anlegen (dev.twitch.tv/console) → Client-ID in [config.json](config.json)
 - [x] Zugangscode sicher in der Umgebung hinterlegt (gilt für api.twitch.tv)
-- [ ] Automatischen Lauf um ca. 08:45 und 20:45 einrichten
+- [x] Automatischer Lauf täglich um 08:43 und 20:43 (geplante Aufgabe „Twitch-Clips für TikTok“, mit Push-Benachrichtigung)
 
 ## Code erneuern (wenn Fehler 401 kommt)
 
