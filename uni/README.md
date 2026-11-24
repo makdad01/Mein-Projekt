@@ -23,4 +23,4 @@ Ziel: Studium Wirtschaftsingenieurwesen Elektrotechnik mit dem bestmöglichen No
 
 - Genaue Prüfungstermine eintragen
 - Klären: Sind Informatik 1 und Informationstechnik zwei verschiedene Module?
-- Lernplan bis zur Prüfungsphase erstellen
+- Lernplan an genaue Termine und Schwierigkeit anpassen → [lernplan.md](lernplan.md)
