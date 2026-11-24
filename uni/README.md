@@ -19,7 +19,8 @@ Ziel: Studium Wirtschaftsingenieurwesen Elektrotechnik mit dem bestmöglichen No
 | Grundlagen der Informatik I | Klausur | Mo 15.02.2027 |
 | Grundlagen der Informationstechnik | Klausur | Mo 25.01.2027 |
 | Grundlagen der Elektrotechnik I | Klausur | Di 02.02.2027 |
-| Marktanalyse | Projektarbeit (Rechercheaufgaben), keine Klausur | Abgabe offen |
+| Marktanalyse | Projektarbeit (Rechercheaufgaben), keine Klausur | kein festes Abgabedatum – Ziel: fertig bis 03.01.2027 |
+| GET I – Praktikum | 2 Termine: 1. erledigt, 2. am Mi 09.12.2026 | – |
 
 - **Stundenplan:** [stundenplan.md](stundenplan.md)
 

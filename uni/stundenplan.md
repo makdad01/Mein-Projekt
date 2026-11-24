@@ -15,4 +15,4 @@ Stand: Beispielwoche KW 41 (05.–09.10.2026). V = Vorlesung, Ü = Übung, P = P
 
 GET I = Grundlagen der Elektrotechnik I für WIE.
 
-**Offen:** Die vielen GET-Praktikumsblöcke (P) sind wahrscheinlich für verschiedene Gruppen bzw. nicht jede Woche – klären, welche Maki wirklich hat.
+**GET-Praktikum (P):** Die vielen P-Blöcke gelten nicht jede Woche. Maki hat nur **2 Praktikumstermine**: der erste ist erledigt, der zweite ist am **Mi 09.12.2026**. Sonst sind die P-Blöcke frei.

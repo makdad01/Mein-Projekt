@@ -4,7 +4,7 @@
 
 > **Annahmen (bitte korrigieren):**
 > - TikTok pausiert bis zu den Semesterferien – volle Konzentration auf die Uni.
-> - Abgabedatum Marktanalyse noch unbekannt.
+> - Marktanalyse hat **kein festes Abgabedatum** → Ziel: bis Ende der Weihnachtsferien (03.01.) fertig, damit sie die Klausurphase nicht stört.
 > - **Schwierigkeit laut Maki:** BWL + Informatik I = leicht · Mathe = mittel · Informationstechnik = sehr schwer · **Elektrotechnik = extrem schwer** → ET und IT bekommen die meiste Zeit.
 > - Lernzeit neben den Vorlesungen: Phase 1 ca. **12 h/Woche**, Phase 3 ca. **25–30 h/Woche**.
 
@@ -34,13 +34,17 @@ Passend zum [Stundenplan](stundenplan.md): Gelernt wird in den Lücken und direk
 
 **Pro Fach und Woche:** Elektrotechnik 4 h · Informationstechnik 3 h · Mathe 2 h · Informatik I 1 h · Marktanalyse 1,5 h · BWL 0,5 h
 
-> Falls die Donnerstags-Lücken durch GET-Praktikum belegt sind: Informationstechnik auf Montag 16:30–18:30 verschieben.
+> Die GET-Praktikumsblöcke sind nicht jede Woche – die Donnerstags-Lücken bleiben frei.
+
+**Sondertermin – GET-Praktikum 2 am Mi 09.12.:**
+- **Mo 07.12.:** ET-Lernblock (14:30–16:30) komplett für die Praktikumsvorbereitung nutzen (Versuchsanleitung lesen, Vorbereitungsaufgaben lösen)
+- **Mi 09.12.:** Lernblock danach fällt aus – nach dem Praktikum ist frei
 
 ## Phase 2 – Weihnachten (21.12. – 03.01.)
 
 - **Altklausuren** für alle Fächer besorgen (Fachschaft, Moodle/Ilias, ältere Semester)
 - **Elektrotechnik + Informationstechnik:** Lücken aus dem Semester schließen, Formelsammlung bzw. Zusammenfassung anlegen – das sind deine schwersten Fächer, hier zählt jede Stunde
-- **Marktanalyse** so weit wie möglich fertig machen, damit sie im Januar nicht stört
+- **Marktanalyse fertig machen** (kein festes Abgabedatum – trotzdem bis 03.01. abschließen, damit sie im Januar nicht stört)
 - **Informatik I kurz vorziehen:** Zwischen Mathe (12.02.) und Informatik (15.02.) liegen nur **2 Tage**. Informatik ist für dich leicht – eine Altklausur rechnen reicht, um zu wissen, wo du stehst.
 
 ## Phase 3 – Klausurmodus (04.01. – 24.01.)
@@ -85,4 +89,5 @@ Erste Klausur ist **Informationstechnik am Mo 25.01.** – die hat jetzt Vorrang
 | Mathematik I für WIE | **Fr 12.02.2027** |
 | Grundlagen der Informatik I | **Mo 15.02.2027** |
 | Grundlagen der BWL | **Mi 24.02.2027** |
-| Marktanalyse (Abgabe Projektarbeit) | offen |
+| Grundlagen der Elektrotechnik I – Praktikum 2 | Mi 09.12.2026 |
+| Marktanalyse (Projektarbeit) | kein festes Datum – Ziel: fertig bis 03.01.2027 |
