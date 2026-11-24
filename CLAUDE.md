@@ -14,7 +14,8 @@
 
 # Projekt
 
-- Ziel von `Mein-Projekt`: noch offen
+- Name: **Maini** (früher `Mein-Projekt`)
+- Ziel: noch offen
 
 # Git
 
