@@ -1,0 +1,4 @@
+{
+  "twitch_client_id": "ufy4jblnij38nzh9igcg8zt9lrfyx0",
+  "hinweis": "Die Client-ID ist nicht geheim. Der Zugangscode (Token) liegt NICHT hier, sondern sicher in der Umgebung und wird automatisch an api.twitch.tv angehängt."
+}

@@ -18,7 +18,7 @@ Zwei Läufe pro Tag (deutsche Zeit), jeweils für die letzten 12 Stunden:
 ## Einrichtung (Stand: noch nicht fertig)
 
 - [ ] Streamer-Liste bestätigen
-- [ ] Twitch-Entwickler-App anlegen (dev.twitch.tv/console) → Client-ID
+- [x] Twitch-Entwickler-App anlegen (dev.twitch.tv/console) → Client-ID in [config.json](config.json)
 - [ ] Netzwerkzugriff auf `api.twitch.tv` und `id.twitch.tv` freigeben
 - [ ] Zugangsschlüssel sicher hinterlegen
 - [ ] Automatischen Lauf um ca. 08:45 und 20:45 einrichten
