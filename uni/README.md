@@ -10,6 +10,8 @@ Ziel: Studium Wirtschaftsingenieurwesen Elektrotechnik mit dem bestmöglichen No
 
 ## Module 1. Semester
 
+**Schwierigkeit (Makis Einschätzung):** BWL + Informatik I leicht · Mathe mittel · Informationstechnik sehr schwer · Elektrotechnik extrem schwer
+
 | Modul | Prüfungsform | Termin |
 |---|---|---|
 | Wirtschaftsmathematik 1 (Mathematik I für WIE) | Klausur | Fr 12.02.2027 |
