@@ -1,11 +1,11 @@
 ---
 name: twitch-clips
-description: Sucht jede Stunde die neuen Twitch-Clips der letzten 60 Minuten von Makis Lieblings-Streamern heraus und wählt die 5 noch nicht empfohlenen mit dem größten Viral-Potenzial für TikTok aus (max. 59 Sekunden). Nutzen, wenn Maki nach Clips, Twitch-Highlights oder Clip-Vorschlägen fragt, beim stündlichen Lauf, oder wenn Maki zurückmeldet, welche Clips viral gegangen sind.
+description: Sucht zu festen Zeiten (0, 2, 8, 12, 18, 20, 22 Uhr) die neuen Twitch-Clips seit dem letzten Lauf von Makis Lieblings-Streamern heraus und wählt die 5 noch nicht empfohlenen mit dem größten Viral-Potenzial für TikTok aus (max. 59 Sekunden). Nutzen, wenn Maki nach Clips, Twitch-Highlights oder Clip-Vorschlägen fragt, beim geplanten Lauf, oder wenn Maki zurückmeldet, welche Clips viral gegangen sind.
 ---
 
 # Twitch-Clips für TikTok auswählen
 
-Ziel: **Jede Stunde** aus allen Clips der **letzten 60 Minuten** die **Top 5** für Makis TikTok finden – nur Clips, die noch nie empfohlen wurden.
+Ziel: Zu jeder Lauf-Zeit aus allen Clips **seit dem letzten Lauf** die **Top 5** für Makis TikTok finden – nur Clips, die noch nie empfohlen wurden.
 Du lieferst **Links + Begründung**, keine Videodateien. Maki schaut sie an und lädt hoch, was ihm gefällt.
 
 ## Streamer-Liste
@@ -15,7 +15,19 @@ Gepflegt in `tiktok/clips/streamer.md`. Nur diese Kanäle durchsuchen, außer Ma
 ## Harte Regeln
 
 1. **Länge ≤ 59 Sekunden.** Längere Clips fliegen raus.
-2. **Zeitraum:** nur Clips der letzten 60 Minuten (das Skript schaut 75 min zurück, damit bei leicht verspätetem Lauf nichts durchrutscht – doppelte fallen durch `empfohlen.txt` raus). So bekommt Maki jeden Clip mit Viral-Potenzial genau einmal.
+2. **Zeitraum:** immer seit dem letzten Lauf (deutsche Zeit):
+
+   | Lauf | Zeitfenster |
+   |---|---|
+   | 00:00 | 22–24 Uhr |
+   | 02:00 | 0–2 Uhr |
+   | 08:00 | 2–8 Uhr |
+   | 12:00 | 8–12 Uhr |
+   | 18:00 | 12–18 Uhr |
+   | 20:00 | 18–20 Uhr |
+   | 22:00 | 20–22 Uhr |
+
+   Das Skript bestimmt das Fenster automatisch (Zeiten in `config.json` → `laufzeiten`) und schaut 15 min weiter zurück, damit nichts durchrutscht – doppelte fallen durch `empfohlen.txt` raus. So bekommt Maki jeden Clip mit Viral-Potenzial genau einmal.
 3. **Keine Wiederholungen:** Clips aus `tiktok/clips/empfohlen.txt` nie nochmal vorschlagen (das Skript filtert sie raus).
 4. **Sprache:** Deutsch bevorzugt (alle Streamer der Liste sind deutsch).
 5. Keine Clips mit Gewalt, Hass, sexuellen Inhalten oder echten Privatdaten – die bringen Strikes auf TikTok.
@@ -23,7 +35,7 @@ Gepflegt in `tiktok/clips/streamer.md`. Nur diese Kanäle durchsuchen, außer Ma
 ## Ablauf
 
 1. Clips abrufen: `python3 .claude/skills/twitch-clips/fetch_clips.py > <scratchpad>/clips.json`
-   Gibt alle Clips ≤ 59 s der letzten 75 min als JSON aus, sortiert nach Views pro Stunde.
+   Gibt alle Clips ≤ 59 s seit dem letzten Lauf als JSON aus, sortiert nach Views pro Stunde.
    Der Twitch-Zugangscode wird automatisch vom Proxy an api.twitch.tv angehängt.
    Bei **Fehler 401**: Code abgelaufen → Maki benachrichtigen, Anleitung in `tiktok/clips/README.md` („Code erneuern“).
 2. Filtern: Dauer ≤ 59 s.
@@ -47,7 +59,7 @@ Lies **vor jedem Lauf** `tiktok/clips/learnings.md` und wende die Learnings an.
 
 ## Grenzen (ehrlich angeben)
 - Du kannst die Clips **nicht anschauen**, nur Titel, Länge und Zahlen sehen. Hook und Kontext sind aus dem Titel geschätzt – das im Ergebnis dazuschreiben.
-- Twitch zählt Views verzögert, und alle Clips sind höchstens ~1 h alt. Deshalb zählen **Titel, Streamer und wie viele Leute denselben Moment geclippt haben** (mehrere Clips zur gleichen Zeit beim gleichen Streamer = großer Moment) genauso viel wie die Views.
+- Twitch zählt Views verzögert, und viele Clips sind erst wenige Stunden alt. Deshalb zählen **Titel, Streamer und wie viele Leute denselben Moment geclippt haben** (mehrere Clips zur gleichen Zeit beim gleichen Streamer = großer Moment) genauso viel wie die Views.
 - Clips mit dem Stream-Titel als Clip-Titel (z. B. „[DROPS] …“) sind meist unbenannt und schwer einzuschätzen → nur nehmen, wenn die Zahlen klar herausstechen.
 
 ## Ausgabeformat

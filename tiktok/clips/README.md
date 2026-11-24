@@ -1,6 +1,6 @@
 # Twitch-Clips
 
-Jede Stunde werden die 5 besten neuen Twitch-Clips (≤ 59 s) der Lieblings-Streamer ausgewählt (Skill `twitch-clips`).
+7× am Tag werden die 5 besten neuen Twitch-Clips (≤ 59 s) der Lieblings-Streamer ausgewählt (Skill `twitch-clips`).
 
 - [streamer.md](streamer.md) – welche Kanäle durchsucht werden
 - [feedback.md](feedback.md) – Makis Rückmeldungen, was viral ging
@@ -8,14 +8,26 @@ Jede Stunde werden die 5 besten neuen Twitch-Clips (≤ 59 s) der Lieblings-Stre
 
 ## Zeitplan
 
-**Jede Stunde** werden die Clips der **letzten 60 Minuten** durchsucht und die **Top 5 neuen** Clips empfohlen (Push-Benachrichtigung). Schon empfohlene Clips stehen in [empfohlen.txt](empfohlen.txt) und kommen nicht nochmal.
+Zu festen Zeiten (deutsche Zeit) werden alle Clips **seit dem letzten Lauf** durchsucht und die **Top 5 neuen** empfohlen (Push-Benachrichtigung). Schon empfohlene Clips stehen in [empfohlen.txt](empfohlen.txt) und kommen nicht nochmal.
+
+| Lauf | Zeitfenster |
+|---|---|
+| 00:00 | 22–24 Uhr |
+| 02:00 | 0–2 Uhr |
+| 08:00 | 2–8 Uhr |
+| 12:00 | 8–12 Uhr |
+| 18:00 | 12–18 Uhr |
+| 20:00 | 18–20 Uhr |
+| 22:00 | 20–22 Uhr |
+
+Die Läufe starten jeweils ca. 3 Minuten nach der vollen Stunde, damit die Clips bis zur vollen Stunde schon da sind.
 
 ## Einrichtung
 
 - [x] Streamer-Liste bestätigen
 - [x] Twitch-Entwickler-App anlegen (dev.twitch.tv/console) → Client-ID in [config.json](config.json)
 - [x] Zugangscode sicher in der Umgebung hinterlegt (gilt für api.twitch.tv)
-- [x] Automatischer Lauf jede Stunde (geplante Aufgabe „Twitch-Clips für TikTok“, mit Push-Benachrichtigung)
+- [x] Automatischer Lauf um 0, 2, 8, 12, 18, 20 und 22 Uhr (geplante Aufgabe „Twitch-Clips für TikTok“, mit Push-Benachrichtigung)
 
 ## Code erneuern (wenn Fehler 401 kommt)
 
