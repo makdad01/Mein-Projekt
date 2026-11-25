@@ -10,7 +10,6 @@ Die Twitch-IDs stehen in [config.json](config.json) – neue Streamer dort **und
 | Rohat | `rohat` | 130299361 |
 | Zarbex | `zarbex` | 403594122 |
 | Coach Lim | `coachlim` | 51653974 |
-| Papaplatte | `papaplatte` | 50985620 |
 | Knossi | `therealknossi` | 71588578 |
 | MckyTV | `mckytv` | 101572475 |
 | Mert Abi Mula | `mertabimula` | 463204522 |
@@ -21,3 +20,9 @@ Die Twitch-IDs stehen in [config.json](config.json) – neue Streamer dort **und
 | Niklas Wilson | `niklaswilson` | 501438035 |
 | Sidney Eweka | `sidneyeweka` | 135177864 |
 | Delarue (zweiter Kanal) | `delarue` | 439522902 |
+
+## Entfernt
+
+| Streamer | Wann | Grund |
+|---|---|---|
+| Papaplatte (`papaplatte`, 50985620) | 25.11.2026 | Maki findet seine Clips unlustig, also nie mehr vorschlagen |
