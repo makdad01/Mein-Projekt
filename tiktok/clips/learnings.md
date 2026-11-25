@@ -1,6 +1,12 @@
 # Learnings: Was funktioniert bei Makis Clips?
 
-Noch keine Daten. Wird aus `feedback.md` abgeleitet, sobald Maki erste Ergebnisse meldet.
+## Was viral ging (Stand 25.11.2026, 4 Treffer)
+
+1. **GTA-6-Meinungen ziehen** (2 von 4): „Game ist komplett unspielbar“ (Zarbex) und „GTA 6 besser als San Andreas“ (Trymacs). Eine klare, steile Meinung zum Hype-Spiel bringt Kommentare. → **+10 Learnings-Bonus** für Hot Takes zu GTA 6 bzw. zum aktuellen Hype-Game.
+2. **Zarbex ist der stärkste Streamer** (2 von 4). → **+10 Streamer-Bonus für Zarbex**, +5 für Coach Lim und Trymacs (je 1 Treffer).
+3. **Meme-Sounds schlagen „eigener Inhalt“:** „Die Vision ist Tach tach tach“ ging viral, obwohl es eine Reaction auf ein fremdes TikTok ist und ich es als schwach bewertet hatte. Ein wiederholbarer, absurder Satz oder Sound ist wichtiger als die Frage, wessen Video es ist. → Reactions mit Ohrwurm-Satz **nicht mehr abwerten**.
+4. **Running Gags / Spitznamen** („Eli der Ägypter“) funktionieren.
+5. **Was bisher nicht ging:** die meisten Clips, die ich nur nach Titel und Views ausgewählt hatte.
 
 ## Regeln aus Makis Feedback
 
