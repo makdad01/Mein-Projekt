@@ -12,6 +12,7 @@
 
 - **25.11.2026:** Keine Clips vom selben Moment wie früher empfohlene, auch wenn der Link anders ist (Beispiel: „Zarbex ironische game bewertung“). Vor der Auswahl Titel und Uhrzeit mit den letzten Ergebnis-Dateien vergleichen.
 - **25.11.2026:** Papaplatte komplett raus (Maki: „alle unlustig“). Aus `config.json` und `streamer.md` entfernt.
+- **26.11.2026:** Maki will nur **frische Clips (max. ein paar Stunden alt)**, nichts von gestern. Bei Extra-Wünschen nur seit dem letzten Abend suchen, nicht 30 Stunden zurück.
 
 ## Änderungen am Viral-Score
 
