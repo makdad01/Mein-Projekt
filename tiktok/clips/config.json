@@ -27,5 +27,18 @@
     18,
     20,
     22
-  ]
+  ],
+  "neben": {
+    "hinweis": "Andere Streamer nur überfliegen: nur deutschsprachige Clips <= 59 s mit mindestens min_views Views kommen rein (Makis Wunsch, 27.11.2026).",
+    "min_views": 100,
+    "seiten_pro_kategorie": 5,
+    "streamer": {
+      "rewinside": "46780407"
+    },
+    "kategorien": {
+      "Just Chatting": "509658",
+      "Grand Theft Auto VI": "1867279146",
+      "Grand Theft Auto V": "32982"
+    }
+  }
 }

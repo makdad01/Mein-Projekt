@@ -21,6 +21,12 @@ Die Twitch-IDs stehen in [config.json](config.json) – neue Streamer dort **und
 | Sidney Eweka | `sidneyeweka` | 135177864 |
 | Delarue (zweiter Kanal) | `delarue` | 439522902 |
 
+## Andere Streamer (nur überfliegen)
+
+Werden nicht komplett durchsucht. Das Skript nimmt nur deutschsprachige Clips mit mindestens 100 Views mit (Einstellung in `config.json` → `neben`):
+- Extra-Kanäle: Rewinside (`rewinside`, 46780407)
+- Kategorien: Just Chatting, Grand Theft Auto VI, Grand Theft Auto V
+
 ## Entfernt
 
 | Streamer | Wann | Grund |

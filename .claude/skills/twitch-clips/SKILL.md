@@ -10,7 +10,9 @@ Du lieferst **Links + Begründung**, keine Videodateien. Maki schaut sie an und 
 
 ## Streamer-Liste
 
-Gepflegt in `tiktok/clips/streamer.md`. Nur diese Kanäle durchsuchen, außer Maki sagt etwas anderes.
+Gepflegt in `tiktok/clips/streamer.md`. **Hauptstreamer:** jeden Clip durchsehen.
+
+**Andere Streamer (seit 27.11.2026):** Das Skript überfliegt zusätzlich andere deutsche Streamer (`config.json` → `neben`: Extra-Kanäle wie Rewinside plus die Kategorien Just Chatting und GTA V/VI). Von denen kommen nur Clips mit mindestens `min_views` Views (Standard 100) in die Liste, im JSON an `"hauptstreamer": false` erkennbar. Davon nur die **krassesten** anschauen und nur nehmen, wenn sie klar viral-tauglich sind (Score ≥ 80). Alles darunter weglassen. Papaplatte bleibt komplett raus.
 
 ## Harte Regeln
 
