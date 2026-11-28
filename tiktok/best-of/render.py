@@ -260,6 +260,7 @@ WrapStyle: 0
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
 Style: Sub,Inter Display Black,{SUB_SIZE},&H00FFFFFF,&H00FFFFFF,&H00160A0A,&H90000000,0,0,0,0,100,100,2,0,1,5,3,2,70,70,{H - unten},1
+Style: Cta,Inter Display Black,{SUB_SIZE},&H00FFFFFF,&H00FFFFFF,&H00160A0A,&HA0000000,0,0,0,0,100,100,2,0,3,14,0,8,70,70,{L["fy"] + 40},1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
@@ -296,7 +297,7 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
                       f"{{\\fscx88\\fscy88\\t(0,80,\\fscx100\\fscy100)}}{txt}")
     if cta:
         t = re.sub(r"\{(.+?)\}", lambda m: f"{{\\c{AKZENT_ASS}}}{m.group(1)}{{\\c&H00FFFFFF&}}", cta)
-        zeilen.append(f"Dialogue: 0,{_ass_zeit(d - CTA_S)},{_ass_zeit(d)},Sub,,0,0,0,,{t}")
+        zeilen.append(f"Dialogue: 0,{_ass_zeit(d - CTA_S)},{_ass_zeit(d)},Cta,,0,0,0,,{t}")
     open(pfad, "w", encoding="utf-8").write(kopf + "\n".join(zeilen) + "\n")
 
 

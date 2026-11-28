@@ -1,3 +1,4 @@
 
 # Ignorierte Clip-Rohdateien
 tiktok/best-of/*/clips/
+tiktok/best-of/**/*.mp4

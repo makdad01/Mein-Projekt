@@ -30,7 +30,7 @@ Muster-Bild erzeugen: `python3 tiktok/best-of/render.py --vorlage "PSYCHO ZARBEX
 
 ## Ablauf pro Streamer
 1. Claude analysiert die Twitch-Clips des Monats (offizielle API) und wählt ein Thema + 5 Clips → `JJJJ-MM/<kanal>.json`
-2. Maki lädt die 5 Clips über die Links runter und schickt sie Claude (Claude darf die Videodateien nicht selbst von Twitch laden)
+2. Claude lädt die 5 Clips selbst mit `yt-dlp` (von Maki am 29.11.2026 erlaubt), schaut sie an (Standbilder + Whisper-Text) und prüft auf doppelte Szenen
 3. Claude schaut sich die Untertitel an, schneidet Leerlauf weg (`start`/`ende`) und rendert:
    `python3 tiktok/best-of/render.py tiktok/best-of/JJJJ-MM/<kanal>.json <kanal>.mp4`
 4. Maki gibt Feedback → hier eintragen, dann nächster Streamer.
@@ -42,6 +42,7 @@ Muster-Bild erzeugen: `python3 tiktok/best-of/render.py --vorlage "PSYCHO ZARBEX
 ## Feedback zum Design
 | Datum | Feedback | Änderung |
 |---|---|---|
+| 29.11.2026 | Psycho Zarbex gerendert (94,8 s) | Clips per yt-dlp geladen (Maki erlaubt). „Kurze Zündschnur“ = gleiche Szene wie „Prügelei“ → „Kurzer Ausraster“. Eigene Untertitel aus, weil Zarbex' Overlay schon Untertitel hat. Abschlussfrage oben im Videofenster |
 | 29.11.2026 | Psycho Zarbex: alle 5 Clips abgenommen ✅ | warte auf Clip-Dateien |
 | 29.11.2026 | Psycho Zarbex: Platz 5 „Zarbex der Psycho“ passt nicht | ersetzt durch „Schwerer Verkehrsunfall“ |
 | 29.11.2026 | Psycho Zarbex: Maki will „Zarbi geht Crashout“ dazu | Instant Karma raus, Crashout auf Platz 4, Psycho auf 5 |

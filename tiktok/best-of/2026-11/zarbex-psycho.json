@@ -3,11 +3,6 @@
   "titel": "PSYCHO ZARBEX",
   "thema": "Chaos in GTA 6 (nur Spiel-Figuren)",
   "cta": "WELCHER WAR AM {KRANKSTEN}?\\NAB IN DIE KOMMENTARE",
-  "gelb": [
-    "unfall",
-    "crashout",
-    "schradin"
-  ],
   "clips": [
     {
       "platz": 5,
@@ -15,7 +10,9 @@
       "label": "Schwerer Verkehrsunfall 💥",
       "twitch": "https://www.twitch.tv/zarbex/clip/ManlyIcyBubbleteaFutureMan-AElVOOyse2zirFLC",
       "titel_twitch": "schwerer Verkehrsunfall",
-      "laenge_s": 30
+      "laenge_s": 30,
+      "start": 3.0,
+      "ende": 22.5
     },
     {
       "platz": 4,
@@ -23,7 +20,9 @@
       "label": "Zarbi geht Crashout 🤬",
       "twitch": "https://www.twitch.tv/zarbex/clip/CloudyAttractiveOryxKeepo-hshW-C23zNmEUO_U",
       "titel_twitch": "Zarbi geht crashout",
-      "laenge_s": 17.4
+      "laenge_s": 17.4,
+      "start": 0,
+      "ende": null
     },
     {
       "platz": 3,
@@ -31,15 +30,19 @@
       "label": "Prügelei 👊",
       "twitch": "https://www.twitch.tv/zarbex/clip/NastyHedonisticScorpionSeemsGood-PkJGbeIqF5-7QpD1",
       "titel_twitch": "Prügelei HAHA",
-      "laenge_s": 20
+      "laenge_s": 20,
+      "start": 0,
+      "ende": 16.0
     },
     {
       "platz": 2,
       "datei": "clips/zarbex-psycho/2.mp4",
-      "label": "Kurze Zündschnur 🧨",
-      "twitch": "https://www.twitch.tv/zarbex/clip/HelpfulTriangularOryxKreygasm-QSMsC4TPijAkPGy8",
-      "titel_twitch": "kurze Zündschnur",
-      "laenge_s": 30
+      "label": "Kurzer Ausraster 💢",
+      "twitch": "https://www.twitch.tv/zarbex/clip/KitschyElegantSowPunchTrees-SEdQv_yPtk0FMlWM",
+      "titel_twitch": "kurzer Ausraster",
+      "laenge_s": 32.6,
+      "start": 11.0,
+      "ende": 29.5
     },
     {
       "platz": 1,
@@ -47,8 +50,12 @@
       "label": "Schradin platt gefahren 💀",
       "twitch": "https://www.twitch.tv/zarbex/clip/RockyDeadHeronRedCoat-_3-Uexjte8o8-u9V",
       "titel_twitch": "Schradin in GTA6 platt gefahren",
-      "laenge_s": 23.4
+      "laenge_s": 23.4,
+      "start": 0,
+      "ende": null
     }
   ],
-  "status": "Clip-Auswahl von Maki abgenommen (29.11.2026) – warte auf Clip-Dateien"
+  "status": "Clip-Auswahl von Maki abgenommen (29.11.2026) – warte auf Clip-Dateien",
+  "untertitel": false,
+  "hinweis": "Clips haben schon eingebrannte Untertitel aus Zarbex' Stream-Overlay → eigene Untertitel aus. Kurze Zündschnur war dieselbe Szene wie Prügelei → ersetzt durch Kurzer Ausraster."
 }
