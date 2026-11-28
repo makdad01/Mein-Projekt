@@ -10,15 +10,15 @@
 | 2 | FiBii | TimGioh | Tasse mit Tims Gesicht | Montage |
 | 3 | TimGioh | CouchLim | Kalender mit Couchs Gesicht | Montage |
 | 4 | CouchLim | EliasN97 | Mousepad mit Elias' Gesicht | Montage |
-| 5 | EliasN97 | Niklas Wilson | Kissen mit Niklas' Gesicht | eigene Szene |
-| 6 | Niklas Wilson | Marli | Handyhülle mit Marlis Gesicht | Montage |
+| 5 | EliasN97 | NiklasWilson | Kissen mit Niklas' Gesicht | eigene Szene |
+| 6 | NiklasWilson | Marli | Handyhülle mit Marlis Gesicht | Montage |
 | 7 | Marli | Ali Bumaye | Alis eigenes Album auf CD | eigene Szene |
 | 8 | Ali Bumaye | MontanaBlack | leerer Karton: „Ein Shoutout von Ali“ | eigene Szene |
 | 9 | MontanaBlack | xRohat | Socken mit Rohats Gesicht, kommen per Paket zu spät | Finale |
 
 **Running Gag:** Niklas hat letztes Jahr ein **benutztes Raclette-Set** gewichtelt. Daher kommt die Regel „kein Schrott“, und in der letzten Szene wird das wieder aufgegriffen.
 
-> Namen noch final prüfen: TimGioh, CouchLim, EliasN97, Marli. Im Dialog heißen alle kurz (Monte, Rohat, FiBii, Tim, Couch, Elias, Niklas, Marli, Ali).
+> Namen von Maki bestätigt. NiklasWilson ist der Freund von EliasN97. Im Dialog heißen alle kurz (Monte, Rohat, FiBii, Tim, Couch, Elias, Niklas, Marli, Ali).
 
 ## Figuren
 
