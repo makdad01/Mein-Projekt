@@ -12,7 +12,7 @@ Werte nicht pro Streamer ändern – der Kanal soll wiedererkennbar sein.
 
 | Element | Festlegung |
 |---|---|
-| Format | 9:16, 1080×1920, 30 fps, 61–100 s, 5 Clips, Countdown Platz 5 → 1 |
+| Format | 9:16, 1080×1920, 30 fps, 61–100 s (Ziel **65–75 s**, ohne Leerlauf), 5 Clips, Countdown Platz 5 → 1 |
 | Hintergrund | derselbe Clip vergrößert, stark verschwommen, dunkel-violett eingefärbt (#14082A, 62 %) – ruhig, keine Deko |
 | Überschrift oben | Rot (#E2202C), weißer Rand, schwarzer Schatten, leicht nach oben gebogen, Inter Display Black Italic |
 | Kanalname | „MOGDITV“ klein, weiß, gesperrt, direkt unter der Überschrift |
@@ -42,6 +42,7 @@ Muster-Bild erzeugen: `python3 tiktok/best-of/render.py --vorlage "PSYCHO ZARBEX
 ## Feedback zum Design
 | Datum | Feedback | Änderung |
 |---|---|---|
+| 29.11.2026 | Maki: zu lang, Leute schalten ab → kompakter | Neue Regel: **Ziel ca. 65–75 s**, Pausen/Wiederholungen/Anlauf raus (`teile` im Plan), Highlight in den ersten 2 s. Psycho Zarbex jetzt 71,8 s |
 | 29.11.2026 | Psycho Zarbex gerendert (94,8 s) | Clips per yt-dlp geladen (Maki erlaubt). „Kurze Zündschnur“ = gleiche Szene wie „Prügelei“ → „Kurzer Ausraster“. Eigene Untertitel aus, weil Zarbex' Overlay schon Untertitel hat. Abschlussfrage oben im Videofenster |
 | 29.11.2026 | Psycho Zarbex: alle 5 Clips abgenommen ✅ | warte auf Clip-Dateien |
 | 29.11.2026 | Psycho Zarbex: Platz 5 „Zarbex der Psycho“ passt nicht | ersetzt durch „Schwerer Verkehrsunfall“ |

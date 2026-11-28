@@ -16,7 +16,8 @@ Design (Makis Designbriefing vom 29.11.2026, Details in DESIGN.md), von oben nac
   Hintergrund: derselbe Clip vergrößert, stark verschwommen, dunkel-violett eingefärbt.
   Untertitel (Whisper) unten im Videofenster. 61–100 Sekunden, Countdown Platz 5 → 1.
 
-plan.json: siehe 2026-11/zarbex.json. Pro Clip optional: "start"/"ende" (Sekunden),
+plan.json: siehe 2026-11/zarbex.json. Pro Clip optional: "start"/"ende" (Sekunden) oder "teile": [[von, bis], ...]
+(mehrere Stücke, Pausen dazwischen fliegen raus),
 "gelb": ["wort", ...] (Wörter, die in den Untertiteln hervorgehoben werden).
 """
 import json, math, os, re, subprocess, sys, tempfile
@@ -307,6 +308,17 @@ def dauer(path):
                                           "-of", "default=nw=1:nk=1", path]))
 
 
+def vorschneiden(datei, teile, ziel):
+    """Schneidet mehrere Stücke aus einem Clip und hängt sie aneinander (Pausen/Wiederholungen raus)."""
+    f, n = [], len(teile)
+    for k, (a, b) in enumerate(teile):
+        f.append(f"[0:v]trim={a}:{b},setpts=PTS-STARTPTS[v{k}];[0:a]atrim={a}:{b},asetpts=PTS-STARTPTS[a{k}]")
+    f.append("".join(f"[v{k}][a{k}]" for k in range(n)) + f"concat=n={n}:v=1:a=1[v][a]")
+    subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", datei, "-filter_complex", ";".join(f),
+                    "-map", "[v]", "-map", "[a]", "-c:v", "libx264", "-preset", "veryfast", "-crf", "12",
+                    "-c:a", "aac", "-b:a", "256k", ziel], check=True)
+
+
 def fenster(plan):
     fs = [[c.get("start") or 0.0, c.get("ende") or dauer(c["datei"])] for c in plan["clips"]]
     if sum(e - s for s, e in fs) > MAX_S:            # vorne kürzen: Moment ist meist am Clip-Ende
@@ -396,6 +408,12 @@ def main():
             c["datei"] = os.path.join(base, c["datei"])
         if not os.path.exists(c["datei"]):
             sys.exit(f"Clip fehlt: {c['datei']}  ({c.get('twitch', '')})")
+    vortmp = tempfile.mkdtemp()
+    for c in clips:
+        if c.get("teile"):                       # z. B. [[4.6, 13.3], [15.8, 22.6]]
+            ziel_c = os.path.join(vortmp, f"teile{c['platz']}.mp4")
+            vorschneiden(c["datei"], c["teile"], ziel_c)
+            c["datei"], c["start"], c["ende"] = ziel_c, 0, None
     fs = fenster(plan)
     with tempfile.TemporaryDirectory() as tmp:
         teile = []
