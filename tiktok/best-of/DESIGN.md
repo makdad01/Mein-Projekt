@@ -29,3 +29,4 @@ Umgesetzt in `render.py` – Werte dort nicht pro Streamer ändern, sonst sieht 
 ## Feedback zum Design
 | Datum | Feedback | Änderung |
 |---|---|---|
+| 28.11.2026 | Zarbex: Bigfoot + „Große Fresse“ raus, „Wir grüßen, wir sind nett“ rein, einen Clip darf Claude wählen | Plan angepasst (Claude wählte „Ach du Kacke“) |

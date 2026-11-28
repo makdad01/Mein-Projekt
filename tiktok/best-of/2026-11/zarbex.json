@@ -3,22 +3,57 @@
   "titel": "Zarbex' krasseste Momente in GTA 6 – Part 1",
   "thema": "GTA 6 (Release-Woche ab 18.11.)",
   "cta": "WELCHER WAR AM {KRANKSTEN}?\\NAB IN DIE KOMMENTARE",
-  "gelb": ["lucia", "bigfoot", "schradin", "wasted"],
+  "gelb": [
+    "lucia",
+    "schradin",
+    "nett",
+    "kacke"
+  ],
   "clips": [
-    {"platz": 5, "datei": "clips/zarbex/5.mp4", "label": "Zarbi geht Crashout 🤬",
-     "twitch": "https://www.twitch.tv/zarbex/clip/CloudyAttractiveOryxKeepo-hshW-C23zNmEUO_U",
-     "titel_twitch": "Zarbi geht crashout", "views": 1387, "laenge_s": 17.4},
-    {"platz": 4, "datei": "clips/zarbex/4.mp4", "label": "Bigfoot gesichtet?! 🦶",
-     "twitch": "https://www.twitch.tv/zarbex/clip/CrepuscularPricklyCougarPermaSmug-6pD_apiAVgYnmm8s",
-     "titel_twitch": "Big Foot?", "views": 8609, "laenge_s": 13.8},
-    {"platz": 3, "datei": "clips/zarbex/3.mp4", "label": "Große Fresse, kurze Flugzeit ✈️",
-     "twitch": "https://www.twitch.tv/zarbex/clip/ClumsyBadGarlicEleGiggle-KXmK4jm_Kc8dt6fg",
-     "titel_twitch": "WASTED (Große Fresse, kurze Flugzeit)", "views": 3503, "laenge_s": 22.6},
-    {"platz": 2, "datei": "clips/zarbex/2.mp4", "label": "Schradin überfahren 🚗",
-     "twitch": "https://www.twitch.tv/zarbex/clip/RockyDeadHeronRedCoat-_3-Uexjte8o8-u9V",
-     "titel_twitch": "Schradin in GTA6 platt gefahren", "views": 18473, "laenge_s": 23.4},
-    {"platz": 1, "datei": "clips/zarbex/1.mp4", "label": "Lucia 😍",
-     "twitch": "https://www.twitch.tv/zarbex/clip/JollyAgileSalsifyBudStar-90ZSpx5iEz8kaVzL",
-     "titel_twitch": "Lucia", "views": 25000, "laenge_s": 10.8}
+    {
+      "platz": 5,
+      "datei": "clips/zarbex/5.mp4",
+      "label": "Zarbi geht Crashout 🤬",
+      "twitch": "https://www.twitch.tv/zarbex/clip/CloudyAttractiveOryxKeepo-hshW-C23zNmEUO_U",
+      "titel_twitch": "Zarbi geht crashout",
+      "views": 1387,
+      "laenge_s": 17.4
+    },
+    {
+      "platz": 4,
+      "datei": "clips/zarbex/4.mp4",
+      "label": "Ach du Kacke 💩",
+      "twitch": "https://www.twitch.tv/zarbex/clip/EagerEagerMageSMOrc-PGjGsqi6ZpG7oNrV",
+      "titel_twitch": "ach du kacke",
+      "views": 2285,
+      "laenge_s": 12.7
+    },
+    {
+      "platz": 3,
+      "datei": "clips/zarbex/3.mp4",
+      "label": "Wir grüßen, wir sind nett 👋",
+      "twitch": "OFFEN – Link von Maki",
+      "titel_twitch": "?",
+      "views": null,
+      "laenge_s": null
+    },
+    {
+      "platz": 2,
+      "datei": "clips/zarbex/2.mp4",
+      "label": "Schradin überfahren 🚗",
+      "twitch": "https://www.twitch.tv/zarbex/clip/RockyDeadHeronRedCoat-_3-Uexjte8o8-u9V",
+      "titel_twitch": "Schradin in GTA6 platt gefahren",
+      "views": 18473,
+      "laenge_s": 23.4
+    },
+    {
+      "platz": 1,
+      "datei": "clips/zarbex/1.mp4",
+      "label": "Lucia 😍",
+      "twitch": "https://www.twitch.tv/zarbex/clip/JollyAgileSalsifyBudStar-90ZSpx5iEz8kaVzL",
+      "titel_twitch": "Lucia",
+      "views": 25000,
+      "laenge_s": 10.8
+    }
   ]
 }
