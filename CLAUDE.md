@@ -23,6 +23,8 @@
 
 Für TikTok-Skripte den Skill `tiktok-skript` nutzen (`.claude/skills/tiktok-skript/`).
 
+Best-of-Videos „Top-5-Momente“ pro Streamer (61–100 s): festes, einheitliches Design in `tiktok/best-of/DESIGN.md`, gebaut mit `tiktok/best-of/render.py`. Ein Streamer nach dem anderen – erst wenn Maki einen abgenommen hat, kommt der nächste.
+
 Details zu jedem Bereich stehen in der `README.md` des jeweiligen Ordners.
 
 # Git
