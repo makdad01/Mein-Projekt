@@ -12,7 +12,7 @@ Design (Makis Designbriefing vom 29.11.2026, Details in DESIGN.md), von oben nac
      mittig ein sehr dezentes Wasserzeichen „@MOGDITV“ in dunklem Violett
   3. Video-Titel zweizeilig, weiß, fett, kursiv, schwarzer Schatten, violetter Akzent
   4. Rangliste 1–5 untereinander, links, weiß kursiv; „1“ leicht hervorgehoben.
-     Nach jedem Clip erscheint sein Kurztitel neben seiner Zahl.
+     Sobald ein Clip startet, erscheint sofort sein Kurztitel neben seiner Zahl.
   Hintergrund: derselbe Clip vergrößert, stark verschwommen, dunkel-violett eingefärbt.
   Untertitel (Whisper) unten im Videofenster. 61–100 Sekunden, Countdown Platz 5 → 1.
 
@@ -57,7 +57,7 @@ LISTE_Y, LISTE_ROW = 1150, 132     # Rangliste reicht bis ca. 1800
 ZAHL_SIZE, LABEL_SIZE = 92, 52
 SUB_SIZE = 56
 MIN_S, MAX_S, ZIEL_S = 61, 100, 95
-REVEAL_S = 1.2
+REVEAL_AB = 0.0                    # Kurztitel erscheint sofort beim Start seines Clips (Makis Wunsch)
 CTA_S = 3.0
 HYPE = {"digger", "alter", "bruder", "was", "nein", "krass", "psycho", "wtf", "geil", "junge",
         "wallah", "safe", "never", "hilfe", "tot", "brutal"}
@@ -353,7 +353,7 @@ def segment(plan, i, clip, s, e, tmp, out, vorschau):
         f"[b]scale={FW}:{FH}:force_original_aspect_ratio=increase:flags=lanczos,crop={FW}:{FH}[fg]",
         f"[bg][fg]overlay={FX}:{FY}[v0]",
         "[v0][2:v]overlay=0:0[v1]",
-        f"[v1][3:v]overlay=0:0:enable='gte(t,{max(0, d - REVEAL_S):.2f})'[v2]",
+        f"[v1][3:v]overlay=0:0:enable='gte(t,{REVEAL_AB:.2f})'[v2]",
         f"[v2]subtitles={ass}:fontsdir={FONTDIR},format=yuv420p[v]",
         "[0:a]aresample=48000,aformat=channel_layouts=stereo,loudnorm=I=-14:TP=-1.5:LRA=11,aresample=48000[a]",
     ])

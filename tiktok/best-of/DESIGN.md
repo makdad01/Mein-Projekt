@@ -20,7 +20,7 @@ Werte nicht pro Streamer ändern – der Kanal soll wiedererkennbar sein.
 | Wasserzeichen | „@MOGDITV“ mittig im Videofenster, dunkles Violett (#4C1D95), sehr geringe Deckkraft |
 | Titel | unter dem Video, zweizeilig, weiß, fett, kursiv, schwarzer Schatten, dünner violetter Rand + kurzer violetter Strich darunter. Kein Rot/Pink |
 | Rangliste | 1.–5. untereinander, links, weiß, fett kursiv, schwarzer Schatten; „1.“ mit violettem Rand hervorgehoben; reicht bis ca. y=1800 |
-| Kurztitel | erscheinen nach jedem Clip neben seiner Zahl (weiß, kursiv, mit Emoji) |
+| Kurztitel | erscheinen **sofort, wenn der Clip startet**, neben seiner Zahl (weiß, kursiv, mit Emoji) – Zuschauer wissen direkt, worum es geht |
 | Untertitel | Whisper, unten im Videofenster, weiß, ein Wort hellviolett (#C4B5FD) |
 | Ende | letzte 3 s: „WELCHER WAR AM BESTEN? AB IN DIE KOMMENTARE“ |
 | Themen | keine Videos mit dem Thema „schlägt Frauen“ und keine Clips mit echten Personen wie Julia (Freundin) in solchem Kontext – TikTok löscht so etwas, Strike-Gefahr |
@@ -42,6 +42,7 @@ Muster-Bild erzeugen: `python3 tiktok/best-of/render.py --vorlage "PSYCHO ZARBEX
 ## Feedback zum Design
 | Datum | Feedback | Änderung |
 |---|---|---|
+| 29.11.2026 | Maki: Kurztitel muss sofort beim Clip-Start da sein, damit man weiß, worum es geht | Kurztitel erscheint jetzt im ersten Frame des Clips (vorher erst am Ende) |
 | 29.11.2026 | Maki: zu lang, Leute schalten ab → kompakter | Neue Regel: **Ziel ca. 65–75 s**, Pausen/Wiederholungen/Anlauf raus (`teile` im Plan), Highlight in den ersten 2 s. Psycho Zarbex jetzt 71,8 s |
 | 29.11.2026 | Psycho Zarbex gerendert (94,8 s) | Clips per yt-dlp geladen (Maki erlaubt). „Kurze Zündschnur“ = gleiche Szene wie „Prügelei“ → „Kurzer Ausraster“. Eigene Untertitel aus, weil Zarbex' Overlay schon Untertitel hat. Abschlussfrage oben im Videofenster |
 | 29.11.2026 | Psycho Zarbex: alle 5 Clips abgenommen ✅ | warte auf Clip-Dateien |
