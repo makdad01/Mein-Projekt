@@ -11,6 +11,7 @@ Ziel: Account zu einer erfolgreichen Karriere ausbauen – viel Geld verdienen u
 - **Vorbilder:** Enrico (@enricomedy) und Orkan (@orkanberklive)
 - **Analyse der Vorbild-Videos:** [analyse-vorbilder.md](analyse-vorbilder.md)
 - **Skripte:** werden mit dem Skill `tiktok-skript` erstellt und in [skripte/](skripte/) gespeichert
+- **Christmas-AI-Videos (Dez. 2026):** 6 drehfertige KI-Sketches mit Streamern in [christmas-ai/](christmas-ai/)
 
 ## Offene Punkte
 
