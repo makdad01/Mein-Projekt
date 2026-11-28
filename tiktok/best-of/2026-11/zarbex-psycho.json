@@ -3,17 +3,51 @@
   "titel": "PSYCHO ZARBEX",
   "thema": "Chaos in GTA 6 (nur Spiel-Figuren)",
   "cta": "WELCHER WAR AM {KRANKSTEN}?\\NAB IN DIE KOMMENTARE",
-  "gelb": ["oma", "rollator", "lucia", "auto", "schradin"],
+  "gelb": [
+    "karma",
+    "psycho",
+    "schradin"
+  ],
   "clips": [
-    {"platz": 5, "datei": "clips/zarbex-psycho/5.mp4", "label": "Klaut Oma den Rollator 👵",
-     "twitch": "https://www.twitch.tv/zarbex/clip/GlutenFreePopularInternWTRuck-0W9GQC7gxK90pIb5", "titel_twitch": "Zarbex klaut oma Rollator", "laenge_s": 30},
-    {"platz": 4, "datei": "clips/zarbex-psycho/4.mp4", "label": "Die tritt mein Auto 🚗",
-     "twitch": "https://www.twitch.tv/zarbex/clip/AgileStupidMelonStrawBeary-lkODMctWKQL3u_oD", "titel_twitch": "Alter die tritt mein auto", "laenge_s": 30},
-    {"platz": 3, "datei": "clips/zarbex-psycho/3.mp4", "label": "Prügelei 👊",
-     "twitch": "https://www.twitch.tv/zarbex/clip/NastyHedonisticScorpionSeemsGood-PkJGbeIqF5-7QpD1", "titel_twitch": "Prügelei HAHA", "laenge_s": 20},
-    {"platz": 2, "datei": "clips/zarbex-psycho/2.mp4", "label": "Fährt Lucia um 😤",
-     "twitch": "https://www.twitch.tv/zarbex/clip/AbstemiousSavorySoybeanCoolCat-9HxEZF4QzSpq-U9j", "titel_twitch": "Fährt Lucia um und beschwert sich LUL", "laenge_s": 20},
-    {"platz": 1, "datei": "clips/zarbex-psycho/1.mp4", "label": "Schradin platt gefahren 💀",
-     "twitch": "https://www.twitch.tv/zarbex/clip/RockyDeadHeronRedCoat-_3-Uexjte8o8-u9V", "titel_twitch": "Schradin in GTA6 platt gefahren", "laenge_s": 23.4}
+    {
+      "platz": 5,
+      "datei": "clips/zarbex-psycho/5.mp4",
+      "label": "Instant Karma ⚡",
+      "twitch": "https://www.twitch.tv/zarbex/clip/DiligentCredulousGullFailFish-0GjiQ2ffSjVkD0Tq",
+      "titel_twitch": "instant Karma",
+      "laenge_s": 27
+    },
+    {
+      "platz": 4,
+      "datei": "clips/zarbex-psycho/4.mp4",
+      "label": "Zarbex der Psycho 😈",
+      "twitch": "https://www.twitch.tv/zarbex/clip/HelpfulTrappedYamMingLee-Fl2W1Ebck16waVAu",
+      "titel_twitch": "Zarbex der Psycho",
+      "laenge_s": 15
+    },
+    {
+      "platz": 3,
+      "datei": "clips/zarbex-psycho/3.mp4",
+      "label": "Prügelei 👊",
+      "twitch": "https://www.twitch.tv/zarbex/clip/NastyHedonisticScorpionSeemsGood-PkJGbeIqF5-7QpD1",
+      "titel_twitch": "Prügelei HAHA",
+      "laenge_s": 20
+    },
+    {
+      "platz": 2,
+      "datei": "clips/zarbex-psycho/2.mp4",
+      "label": "Kurze Zündschnur 🧨",
+      "twitch": "https://www.twitch.tv/zarbex/clip/HelpfulTriangularOryxKreygasm-QSMsC4TPijAkPGy8",
+      "titel_twitch": "kurze Zündschnur",
+      "laenge_s": 30
+    },
+    {
+      "platz": 1,
+      "datei": "clips/zarbex-psycho/1.mp4",
+      "label": "Schradin platt gefahren 💀",
+      "twitch": "https://www.twitch.tv/zarbex/clip/RockyDeadHeronRedCoat-_3-Uexjte8o8-u9V",
+      "titel_twitch": "Schradin in GTA6 platt gefahren",
+      "laenge_s": 23.4
+    }
   ]
 }
