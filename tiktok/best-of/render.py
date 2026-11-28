@@ -6,10 +6,10 @@ Aufruf:
   python3 tiktok/best-of/render.py --vorlage "<titel>" <ausgabe.png> [beispielbild]
 
 Design (Makis Designbriefing vom 29.11.2026, Details in DESIGN.md), von oben nach unten:
-  1. Überschrift „STREAMER CLIP UND BEST OFS“: rot, weißer Rand, Schatten, leicht gebogen;
-     darunter klein „HIGHLIGHTS MOGDITV“
+  1. Überschrift „STREAMER HIGHLIGHTS“: rot, weißer Rand, Schatten, leicht gebogen;
+     darunter klein „MOGDITV“
   2. großes, waagerechtes Videofenster (16:9) mit dünnem, dezent violettem Rahmen;
-     mittig ein sehr dezentes Wasserzeichen in dunklem Violett
+     mittig ein sehr dezentes Wasserzeichen „@MOGDITV“ in dunklem Violett
   3. Video-Titel zweizeilig, weiß, fett, kursiv, schwarzer Schatten, violetter Akzent
   4. Rangliste 1–5 untereinander, links, weiß kursiv; „1“ leicht hervorgehoben.
      Nach jedem Clip erscheint sein Kurztitel neben seiner Zahl.
@@ -26,8 +26,9 @@ from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 # ---------- festes Design ----------
 W, H = 1080, 1920
-KANAL = "HIGHLIGHTS MOGDITV"
-KOPF_TEXT = "STREAMER CLIP UND BEST OFS"
+KANAL = "MOGDITV"
+WASSERZEICHEN = "@MOGDITV"
+KOPF_TEXT = "STREAMER HIGHLIGHTS"
 FONTDIR = "/usr/share/fonts/opentype/inter"
 F_KOPF = f"{FONTDIR}/InterDisplay-BlackItalic.otf"
 F_TITEL = f"{FONTDIR}/InterDisplay-BlackItalic.otf"
@@ -166,7 +167,7 @@ def _kopfzeile(img):
         pos += adv
     img.alpha_composite(schatten.filter(ImageFilter.GaussianBlur(4)))
     img.alpha_composite(vorne)
-    kf = ImageFont.truetype(F_KLEIN, 28)
+    kf = ImageFont.truetype(F_KLEIN, 34)
     t = " ".join(KANAL)
     ImageDraw.Draw(img).text((W / 2, KLEIN_Y), t, font=kf, fill=(255, 255, 255, 190), anchor="mm")
 
@@ -180,7 +181,7 @@ def deckebene(titel, labels, aufgedeckt, pfad):
     d.rectangle((FX - 3, FY - 3, FX + FW + 2, FY + FH + 2), outline=VIOLETT + (230,), width=3)
     wf = ImageFont.truetype(F_KOPF, 60)
     wz = Image.new("RGBA", (W, H), (0, 0, 0, 0))
-    ImageDraw.Draw(wz).text((FX + FW / 2, FY + FH / 2), KANAL, font=wf, fill=VIOLETT_DUNKEL + (70,),
+    ImageDraw.Draw(wz).text((FX + FW / 2, FY + FH / 2), WASSERZEICHEN, font=wf, fill=VIOLETT_DUNKEL + (70,),
                             anchor="mm", stroke_width=1, stroke_fill=(255, 255, 255, 18))
     img.alpha_composite(wz)
     # Titel unter dem Video: zweizeilig, weiß, kursiv, Schatten, violetter Akzent
