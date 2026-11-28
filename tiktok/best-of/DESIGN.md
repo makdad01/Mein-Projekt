@@ -1,19 +1,31 @@
-# Maini-Design „Top-5-Momente“ (fest, für ALLE Streamer gleich)
+# Design „HIGHLIGHTS MOGDITV“ (fest, für ALLE Streamer gleich)
 
-Festgelegt am 28.11.2026 nach Makis Vorgabe (Vorbilder: @by.alexz, @nickstrsp, @core.streamer0).
-Umgesetzt in `render.py` – Werte dort nicht pro Streamer ändern, sonst sieht der Account uneinheitlich aus.
+Festgelegt am 29.11.2026 nach Makis Designbriefing. Umgesetzt in `render.py`, Muster: [vorlage/vorlage-leer.png](vorlage/vorlage-leer.png) und [vorlage/vorlage-beispiel.png](vorlage/vorlage-beispiel.png).
+Werte nicht pro Streamer ändern – der Kanal soll wiedererkennbar sein.
+
+**Reihenfolge von oben nach unten:**
+1. Überschrift „STREAMER CLIP UND BEST OFS“, darunter klein „HIGHLIGHTS MOGDITV“
+2. großes, waagerechtes Videofenster
+3. Video-Titel (z. B. „DIE BESTEN ABUGOKU & ABDI MOMENTE“)
+4. Rangliste 1–5 untereinander
+5. dezentes Wasserzeichen HIGHLIGHTS MOGDITV (mittig im Videofenster)
 
 | Element | Festlegung |
 |---|---|
-| Format | 9:16, 1080×1920, 30 fps, H.264 hohe Qualität |
-| Länge | **61–100 Sekunden**, genau 5 Clips, Countdown Platz 5 → 1 |
-| Thema | alle 5 Clips mit gemeinsamem Thema (z. B. nur GTA 6 oder nur Ausraster) |
-| Titel | oben, **gelb (#FFD21F)**, Inter Display Black, schwarze Kontur, max. 2 Zeilen. Muster: „<Streamer>' <krasseste/Psycho-/lustigste> Momente in <Thema> – Part <n>“ |
-| Liste | darunter 1.–5., weiß mit Kontur. **Nach jedem Clip** (1,2 s vor seinem Ende) erscheint sein Kurztitel mit Emoji, z. B. „Granate apportieren 💣“ |
-| Clip | mittig unter der Liste, volle Breite, leicht gezoomt; Hintergrund = derselbe Clip verschwommen + abgedunkelt (keine schwarzen Balken) |
-| Untertitel | automatisch (Whisper), eingebrannt, GROSSBUCHSTABEN, weiß mit schwarzer Kontur, 1–3 Wörter, ein wichtiges Wort **gelb**, kleiner Pop-Effekt; im unteren Teil des Clips |
-| Ende | letzte 3 s: „WELCHER WAR AM **KRANKSTEN**? AB IN DIE KOMMENTARE“ (bringt Kommentare → Reichweite) |
-| Ton | Lautstärke aller Clips angeglichen (-14 LUFS) |
+| Format | 9:16, 1080×1920, 30 fps, 61–100 s, 5 Clips, Countdown Platz 5 → 1 |
+| Hintergrund | derselbe Clip vergrößert, stark verschwommen, dunkel-violett eingefärbt (#14082A, 62 %) – ruhig, keine Deko |
+| Überschrift oben | Rot (#E2202C), weißer Rand, schwarzer Schatten, leicht nach oben gebogen, Inter Display Black Italic |
+| Kanalname | klein, weiß, gesperrt, direkt unter der Überschrift |
+| Videofenster | 1032×581 (16:9), ab y=290, dünner violetter Rahmen (#8B5CF6, 3 px), keine Neon-Effekte |
+| Wasserzeichen | „HIGHLIGHTS MOGDITV“ mittig im Videofenster, dunkles Violett (#4C1D95), sehr geringe Deckkraft |
+| Titel | unter dem Video, zweizeilig, weiß, fett, kursiv, schwarzer Schatten, dünner violetter Rand + kurzer violetter Strich darunter. Kein Rot/Pink |
+| Rangliste | 1.–5. untereinander, links, weiß, fett kursiv, schwarzer Schatten; „1.“ mit violettem Rand hervorgehoben; reicht bis ca. y=1800 |
+| Kurztitel | erscheinen nach jedem Clip neben seiner Zahl (weiß, kursiv, mit Emoji) |
+| Untertitel | Whisper, unten im Videofenster, weiß, ein Wort hellviolett (#C4B5FD) |
+| Ende | letzte 3 s: „WELCHER WAR AM BESTEN? AB IN DIE KOMMENTARE“ |
+| Verboten | „BLEIB DA LUCA!“, Autos, Palmen, Sonnenuntergänge, Skylines, Symbole, Gaming-Effekte, Zahlen nebeneinander |
+
+Muster-Bild erzeugen: `python3 tiktok/best-of/render.py --vorlage "DIE BESTEN ABUGOKU & ABDI MOMENTE" muster.png [beispielbild.png]`
 
 ## Ablauf pro Streamer
 1. Claude analysiert die Twitch-Clips des Monats (offizielle API) und wählt ein Thema + 5 Clips → `JJJJ-MM/<kanal>.json`
@@ -29,4 +41,5 @@ Umgesetzt in `render.py` – Werte dort nicht pro Streamer ändern, sonst sieht 
 ## Feedback zum Design
 | Datum | Feedback | Änderung |
 |---|---|---|
+| 29.11.2026 | Neues Designbriefing HIGHLIGHTS MOGDITV | komplettes Layout ersetzt (altes gelbes Design verworfen) |
 | 28.11.2026 | Zarbex: Bigfoot + „Große Fresse“ raus, „Wir grüßen, wir sind nett“ rein, einen Clip darf Claude wählen | Plan angepasst (Claude wählte „Ach du Kacke“) |

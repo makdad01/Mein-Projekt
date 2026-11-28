@@ -3,21 +3,23 @@
 
 Aufruf:
   python3 tiktok/best-of/render.py <plan.json> <ausgabe.mp4> [--vorschau]
-  python3 tiktok/best-of/render.py --vorlage <titel> <ausgabe.png> [beispielbild]
+  python3 tiktok/best-of/render.py --vorlage "<titel>" <ausgabe.png> [beispielbild]
 
-Design (für ALLE Streamer gleich, Details in DESIGN.md), von oben nach unten:
-  1. Nummerierung 1–5 untereinander, jede Zahl mit langer Linie fast bis zum rechten Rand;
-     nach jedem Clip erscheint sein Kurztitel auf seiner Linie
-  2. Titel (z. B. „DIE BESTEN ABUGOKU & ABDI MOMENTE“), weiß mit leichtem 3D-Effekt in Violett
-  3. großes, hohes Videofenster mit dünnem violetten Rahmen und dezentem Wasserzeichen
-  Hintergrund fast schwarz (dunkles Lila/Blau) mit dezentem violetten Licht. Keine Deko.
-  Untertitel (Whisper) unten im Videofenster, ein wichtiges Wort hellviolett.
-  61–100 Sekunden, 5 Clips, Countdown Platz 5 → 1.
+Design (Makis Designbriefing vom 29.11.2026, Details in DESIGN.md), von oben nach unten:
+  1. Überschrift „STREAMER CLIP UND BEST OFS“: rot, weißer Rand, Schatten, leicht gebogen;
+     darunter klein „HIGHLIGHTS MOGDITV“
+  2. großes, waagerechtes Videofenster (16:9) mit dünnem, dezent violettem Rahmen;
+     mittig ein sehr dezentes Wasserzeichen in dunklem Violett
+  3. Video-Titel zweizeilig, weiß, fett, kursiv, schwarzer Schatten, violetter Akzent
+  4. Rangliste 1–5 untereinander, links, weiß kursiv; „1“ leicht hervorgehoben.
+     Nach jedem Clip erscheint sein Kurztitel neben seiner Zahl.
+  Hintergrund: derselbe Clip vergrößert, stark verschwommen, dunkel-violett eingefärbt.
+  Untertitel (Whisper) unten im Videofenster. 61–100 Sekunden, Countdown Platz 5 → 1.
 
 plan.json: siehe 2026-11/zarbex.json. Pro Clip optional: "start"/"ende" (Sekunden),
-"fokus_x" (0 = linker Bildrand, 0.5 = Mitte, 1 = rechts), "gelb": ["wort", ...].
+"gelb": ["wort", ...] (Wörter, die in den Untertiteln hervorgehoben werden).
 """
-import json, os, re, subprocess, sys, tempfile
+import json, math, os, re, subprocess, sys, tempfile
 
 import numpy as np
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
@@ -25,28 +27,33 @@ from PIL import Image, ImageDraw, ImageFilter, ImageFont
 # ---------- festes Design ----------
 W, H = 1080, 1920
 KANAL = "HIGHLIGHTS MOGDITV"
+KOPF_TEXT = "STREAMER CLIP UND BEST OFS"
 FONTDIR = "/usr/share/fonts/opentype/inter"
-FONT_TITEL = f"{FONTDIR}/InterDisplay-Black.otf"
-FONT_ZAHL = f"{FONTDIR}/InterDisplay-Black.otf"
-FONT_LABEL = f"{FONTDIR}/InterDisplay-Bold.otf"
-FONT_WZ = f"{FONTDIR}/InterDisplay-SemiBold.otf"
+F_KOPF = f"{FONTDIR}/InterDisplay-BlackItalic.otf"
+F_TITEL = f"{FONTDIR}/InterDisplay-BlackItalic.otf"
+F_ZAHL = f"{FONTDIR}/InterDisplay-BlackItalic.otf"
+F_LABEL = f"{FONTDIR}/InterDisplay-ExtraBoldItalic.otf"
+F_KLEIN = f"{FONTDIR}/InterDisplay-SemiBold.otf"
 FONT_EMOJI = "/usr/share/fonts/truetype/noto/NotoColorEmoji.ttf"
 
-BG_OBEN, BG_MITTE, BG_UNTEN = (10, 7, 20), (15, 10, 30), (7, 6, 14)
-VIOLETT = (139, 92, 246)          # Rahmen, Linien
-VIOLETT_HELL = (196, 181, 253)    # Zahlen, Akzent-Wort in Untertiteln
-VIOLETT_DUNKEL = (59, 31, 120)    # 3D-Kante des Titels
-WEISS = (245, 243, 255)
-AKZENT_ASS = "&H00FDB5C4&"        # VIOLETT_HELL als ASS-Farbe (BGR)
+ROT = (226, 32, 44)
+WEISS = (255, 255, 255)
+SCHWARZ = (0, 0, 0)
+VIOLETT = (139, 92, 246)           # Rahmen, Akzente
+VIOLETT_HELL = (196, 181, 253)     # Hervorhebung „1“, Akzentwort in Untertiteln
+VIOLETT_DUNKEL = (76, 29, 149)     # Wasserzeichen
+TOENUNG = "0x14082A"               # Einfärbung des verschwommenen Hintergrunds
+TOENUNG_ALPHA = 0.62
+AKZENT_ASS = "&H00FDB5C4&"         # VIOLETT_HELL als ASS-Farbe (BGR)
 
-RAND_X = 28                        # seitlicher Abstand Videofenster
-LISTE_Y, LISTE_ROW = 150, 76       # Nummerierung: Start + Zeilenhöhe
-ZAHL_SIZE, LABEL_SIZE = 52, 44
-LINIE_X0, LINIE_X1 = 118, 1040
-TITEL_SIZE, TITEL_MAXW = 70, 1000
-FENSTER_UNTEN = 1640               # Unterkante Videofenster (darunter nur Hintergrund)
-RADIUS = 22
-SUB_SIZE = 62
+KOPF_Y, KOPF_SIZE, KOPF_BOGEN = 120, 70, 2600   # Bogen = Radius (größer = flacher)
+KLEIN_Y = 238
+FX, FY, FW = 24, 290, W - 48       # Videofenster
+FH = round(FW * 9 / 16)            # 16:9 → 581 px hoch
+TITEL_Y, TITEL_SIZE = FY + FH + 44, 74
+LISTE_Y, LISTE_ROW = 1150, 132     # Rangliste reicht bis ca. 1800
+ZAHL_SIZE, LABEL_SIZE = 92, 52
+SUB_SIZE = 56
 MIN_S, MAX_S, ZIEL_S = 61, 100, 95
 REVEAL_S = 1.2
 CTA_S = 3.0
@@ -89,20 +96,20 @@ def _breite(text, font):
     w = 0
     for e, run in _runs(text):
         if e:
-            img = _emoji_bild(run, font.size * 0.95)
+            img = _emoji_bild(run, font.size * 0.9)
             w += (img.width + 8) if img else 0
         else:
             w += font.getlength(run)
     return w
 
 
-def _zeichne(img, x, y_base, text, font, fill, stroke=0, stroke_fill=(0, 0, 0)):
+def _zeichne(img, x, y_base, text, font, fill, stroke=0, stroke_fill=SCHWARZ):
     d = ImageDraw.Draw(img)
     for e, run in _runs(text):
         if e:
-            em = _emoji_bild(run, font.size * 0.95)
+            em = _emoji_bild(run, font.size * 0.9)
             if em:
-                img.alpha_composite(em, (int(x + 4), int(y_base - em.height * 0.88)))
+                img.alpha_composite(em, (int(x + 4), int(y_base - em.height * 0.9)))
                 x += em.width + 8
         else:
             d.text((x, y_base), run, font=font, fill=fill, stroke_width=stroke,
@@ -110,131 +117,106 @@ def _zeichne(img, x, y_base, text, font, fill, stroke=0, stroke_fill=(0, 0, 0)):
             x += font.getlength(run)
 
 
-def _umbrechen(text, font, maxw):
-    """Zeilen möglichst gleich lang (sieht ruhiger aus als „alles in Zeile 1“)."""
-    woerter = text.split()
-    if _breite(text, font) <= maxw:
+def _mit_schatten(img, x, y, text, font, fill, stroke=0, stroke_fill=SCHWARZ, dx=4, dy=6, blur=5, alpha=200):
+    sch = Image.new("RGBA", img.size, (0, 0, 0, 0))
+    _zeichne(sch, x + dx, y + dy, text, font, (0, 0, 0, alpha), stroke, (0, 0, 0, alpha))
+    img.alpha_composite(sch.filter(ImageFilter.GaussianBlur(blur)))
+    _zeichne(img, x, y, text, font, fill, stroke, stroke_fill)
+
+
+def _zwei_zeilen(text, font, maxw):
+    if _breite(text, font) <= maxw and len(text.split()) < 3:
         return [text]
+    w = text.split()
     best = None
-    for i in range(1, len(woerter)):
-        a, b = " ".join(woerter[:i]), " ".join(woerter[i:])
-        wa, wb = _breite(a, font), _breite(b, font)
-        if max(wa, wb) <= maxw and (best is None or abs(wa - wb) < best[0]):
-            best = (abs(wa - wb), [a, b])
+    for i in range(1, len(w)):
+        a, b = " ".join(w[:i]), " ".join(w[i:])
+        diff = abs(_breite(a, font) - _breite(b, font))
+        if max(_breite(a, font), _breite(b, font)) <= maxw and (best is None or diff < best[0]):
+            best = (diff, [a, b])
     return best[1] if best else None
 
 
-# ---------- Layout ----------
-def layout(titel):
-    titel = titel.upper()
+# ---------- Ebenen ----------
+def _kopfzeile(img):
+    """Rote, leicht gebogene Überschrift mit weißem Rand und Schatten."""
+    size = KOPF_SIZE
+    font = ImageFont.truetype(F_KOPF, size)
+    while font.getlength(KOPF_TEXT) > W - 90:
+        size -= 2
+        font = ImageFont.truetype(F_KOPF, size)
+    R = KOPF_BOGEN
+    gesamt = font.getlength(KOPF_TEXT)
+    cx, cy = W / 2, KOPF_Y + size * 0.75 + R      # Kreismittelpunkt weit unterhalb
+    pos = -gesamt / 2
+    schatten = Image.new("RGBA", img.size, (0, 0, 0, 0))
+    vorne = Image.new("RGBA", img.size, (0, 0, 0, 0))
+    for ch in KOPF_TEXT:
+        adv = font.getlength(ch)
+        winkel = (pos + adv / 2) / R
+        x = cx + R * math.sin(winkel)
+        y = cy - R * math.cos(winkel)
+        for ebene, fill, stroke, off in ((schatten, (0, 0, 0, 210), (0, 0, 0, 210), (5, 8)),
+                                         (vorne, ROT, WEISS, (0, 0))):
+            c = Image.new("RGBA", (size * 2, size * 2), (0, 0, 0, 0))
+            ImageDraw.Draw(c).text((size, size), ch, font=font, fill=fill, anchor="ms",
+                                   stroke_width=6, stroke_fill=stroke)
+            c = c.rotate(-math.degrees(winkel), resample=Image.BICUBIC, center=(size, size))
+            ebene.alpha_composite(c, (int(x - size + off[0]), int(y - size + off[1])))
+        pos += adv
+    img.alpha_composite(schatten.filter(ImageFilter.GaussianBlur(4)))
+    img.alpha_composite(vorne)
+    kf = ImageFont.truetype(F_KLEIN, 28)
+    t = " ".join(KANAL)
+    ImageDraw.Draw(img).text((W / 2, KLEIN_Y), t, font=kf, fill=(255, 255, 255, 190), anchor="mm")
+
+
+def deckebene(titel, labels, aufgedeckt, pfad):
+    """Alles außer Hintergrund und Clip (transparentes PNG, liegt über dem Video)."""
+    img = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    _kopfzeile(img)
+    # Videofenster: dünner, dezenter violetter Rahmen + Wasserzeichen
+    d = ImageDraw.Draw(img)
+    d.rectangle((FX - 3, FY - 3, FX + FW + 2, FY + FH + 2), outline=VIOLETT + (230,), width=3)
+    wf = ImageFont.truetype(F_KOPF, 60)
+    wz = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    ImageDraw.Draw(wz).text((FX + FW / 2, FY + FH / 2), KANAL, font=wf, fill=VIOLETT_DUNKEL + (70,),
+                            anchor="mm", stroke_width=1, stroke_fill=(255, 255, 255, 18))
+    img.alpha_composite(wz)
+    # Titel unter dem Video: zweizeilig, weiß, kursiv, Schatten, violetter Akzent
+    t = titel.upper()
     size = TITEL_SIZE
     while True:
-        font = ImageFont.truetype(FONT_TITEL, size)
-        zeilen = _umbrechen(titel, font, TITEL_MAXW)
-        if zeilen or size <= 44:
+        tf = ImageFont.truetype(F_TITEL, size)
+        zeilen = _zwei_zeilen(t, tf, W - 80)
+        if zeilen or size <= 46:
             break
-        size -= 4
-    zeilen = zeilen or [titel]
-    lh = int(size * 1.12)
-    titel_y = LISTE_Y + LISTE_ROW * 5 + 34          # Oberkante Titelblock
-    fenster_y = titel_y + lh * len(zeilen) + 36
-    return dict(font=font, zeilen=zeilen, lh=lh, titel_y=titel_y,
-                fx=RAND_X, fy=fenster_y, fw=W - 2 * RAND_X, fh=FENSTER_UNTEN - fenster_y)
-
-
-def _glow(img, cx, cy, r, farbe, alpha):
-    layer = Image.new("RGBA", img.size, (0, 0, 0, 0))
-    ImageDraw.Draw(layer).ellipse((cx - r, cy - r * 0.7, cx + r, cy + r * 0.7), fill=farbe + (alpha,))
-    img.alpha_composite(layer.filter(ImageFilter.GaussianBlur(r * 0.45)))
-
-
-def hintergrund(titel, pfad):
-    """Unterste Ebene: Verlauf, Licht, Nummerierung mit Linien, 3D-Titel."""
-    L = layout(titel)
-    y = np.linspace(0, 1, H)[:, None]
-    oben, mitte, unten = (np.array(c, float) for c in (BG_OBEN, BG_MITTE, BG_UNTEN))
-    grad = np.where(y < 0.45, oben + (mitte - oben) * (y / 0.45),
-                    mitte + (unten - mitte) * ((y - 0.45) / 0.55))
-    arr = np.repeat(grad[:, None, :], W, axis=1).reshape(H, W, 3)
-    img = Image.fromarray(arr.astype(np.uint8)).convert("RGBA")
-    # dezentes violettes Licht: hinter dem Titel, oben rechts, unten links
-    _glow(img, W // 2, L["titel_y"] + L["lh"], 520, VIOLETT, 60)
-    _glow(img, W - 80, 120, 380, VIOLETT, 28)
-    _glow(img, 120, FENSTER_UNTEN - 100, 420, (76, 29, 149), 40)
-    d = ImageDraw.Draw(img)
-    # Nummerierung 1–5 untereinander mit langen Linien
-    zf = ImageFont.truetype(FONT_ZAHL, ZAHL_SIZE)
+        size -= 3
+    zeilen = zeilen or [t]
+    lh = int(size * 1.1)
+    for i, z in enumerate(zeilen):
+        x = (W - _breite(z, tf)) / 2
+        yb = TITEL_Y + lh * (i + 1) - int(lh * 0.2)
+        _mit_schatten(img, x, yb, z, tf, WEISS, 3, VIOLETT, dx=4, dy=7, blur=6, alpha=230)
+    akzent_y = TITEL_Y + lh * len(zeilen) + 14
+    d.rounded_rectangle((W / 2 - 70, akzent_y, W / 2 + 70, akzent_y + 5), 3, fill=VIOLETT + (255,))
+    # Rangliste 1–5 untereinander
+    zf = ImageFont.truetype(F_ZAHL, ZAHL_SIZE)
+    lf = ImageFont.truetype(F_LABEL, LABEL_SIZE)
     for platz in range(1, 6):
-        yb = LISTE_Y + LISTE_ROW * platz - 18
-        _zeichne(img, 52, yb, str(platz), zf, VIOLETT_HELL)
-        ly = yb + 14
-        for x in range(LINIE_X0, LINIE_X1):          # Linie, nach rechts leicht ausblendend
-            a = int(150 - 90 * (x - LINIE_X0) / (LINIE_X1 - LINIE_X0))
-            d.point((x, ly), fill=VIOLETT + (a,))
-            d.point((x, ly + 1), fill=VIOLETT + (a // 2,))
-    # dünne Trennlinie zwischen Liste und Titel
-    ty = L["titel_y"] - 18
-    d.line((W // 2 - 60, ty, W // 2 + 60, ty), fill=VIOLETT + (200,), width=3)
-    # Titel mit leichtem 3D-Effekt (violette Kante nach rechts unten)
-    f = L["font"]
-    for i, z in enumerate(L["zeilen"]):
-        x = (W - _breite(z, f)) / 2
-        yb = L["titel_y"] + L["lh"] * (i + 1) - int(L["lh"] * 0.2)
-        schatten = Image.new("RGBA", img.size, (0, 0, 0, 0))
-        _zeichne(schatten, x + 4, yb + 10, z, f, (0, 0, 0, 170))
-        img.alpha_composite(schatten.filter(ImageFilter.GaussianBlur(6)))
-        for k in range(6, 0, -1):
-            _zeichne(img, x + k * 0.7, yb + k, z, f, VIOLETT_DUNKEL)
-        _zeichne(img, x, yb, z, f, WEISS, 2, VIOLETT)
-    img.convert("RGB").save(pfad)
-    return img
-
-
-def deckebene(titel, labels, aufgedeckt, pfad, bg=None):
-    """Oberste Ebene: abgerundete Ecken + Rahmen + Wasserzeichen + sichtbare Kurztitel."""
-    L = layout(titel)
-    bg = bg or Image.open(hintergrund_cache(titel)).convert("RGBA")
-    fx, fy, fw, fh = L["fx"], L["fy"], L["fw"], L["fh"]
-    img = Image.new("RGBA", (W, H), (0, 0, 0, 0))
-    # Ecken außerhalb der Rundung mit Hintergrund füllen
-    maske = Image.new("L", (W, H), 255)
-    ImageDraw.Draw(maske).rounded_rectangle((fx, fy, fx + fw - 1, fy + fh - 1), RADIUS, fill=0)
-    box = Image.new("L", (W, H), 0)
-    ImageDraw.Draw(box).rectangle((fx, fy, fx + fw, fy + fh), fill=255)
-    from PIL import ImageChops
-    img.paste(bg, (0, 0), ImageChops.multiply(maske, box))
-    # leichter Glow + dünner Rahmen
-    glow = Image.new("RGBA", (W, H), (0, 0, 0, 0))
-    ImageDraw.Draw(glow).rounded_rectangle((fx - 2, fy - 2, fx + fw + 1, fy + fh + 1), RADIUS + 2,
-                                           outline=VIOLETT + (150,), width=6)
-    img.alpha_composite(glow.filter(ImageFilter.GaussianBlur(8)))
-    ImageDraw.Draw(img).rounded_rectangle((fx, fy, fx + fw - 1, fy + fh - 1), RADIUS,
-                                          outline=VIOLETT + (255,), width=3)
-    # Wasserzeichen mittig, dezent
-    wf = ImageFont.truetype(FONT_WZ, 46)
-    text = " ".join(KANAL)                         # gesperrt
-    wz = Image.new("RGBA", (W, H), (0, 0, 0, 0))
-    ImageDraw.Draw(wz).text((fx + fw / 2, fy + fh / 2), text, font=wf, fill=(255, 255, 255, 46),
-                            anchor="mm", stroke_width=1, stroke_fill=(0, 0, 0, 30))
-    img.alpha_composite(wz)
-    # Kurztitel auf den Linien
-    lf = ImageFont.truetype(FONT_LABEL, LABEL_SIZE)
-    for platz in range(1, 6):
+        yb = LISTE_Y + LISTE_ROW * (platz - 1) + ZAHL_SIZE
+        if platz == 1:
+            _mit_schatten(img, 60, yb, "1.", zf, WEISS, 4, VIOLETT, alpha=230)
+        else:
+            _mit_schatten(img, 60, yb, f"{platz}.", zf, WEISS, 2, SCHWARZ, alpha=220)
         if platz in aufgedeckt and labels.get(platz):
-            yb = LISTE_Y + LISTE_ROW * platz - 22
-            _zeichne(img, LINIE_X0 + 14, yb, labels[platz], lf, WEISS, 3, (10, 6, 22))
+            _mit_schatten(img, 190, yb - 14, labels[platz].upper(), lf, WEISS, 2, SCHWARZ, alpha=220)
     img.save(pfad)
 
 
-_bg_cache = {}
-
-
-def hintergrund_cache(titel):
-    if titel not in _bg_cache:
-        p = os.path.join(tempfile.gettempdir(), f"mogditv_bg_{abs(hash(titel))}.png")
-        hintergrund(titel, p)
-        _bg_cache[titel] = p
-    return _bg_cache[titel]
+def _toenung(pfad):
+    r, g, b = (int(TOENUNG[i:i + 2], 16) for i in (2, 4, 6))
+    Image.new("RGBA", (W, H), (r, g, b, int(255 * TOENUNG_ALPHA))).save(pfad)
 
 
 # ---------- Untertitel ----------
@@ -338,22 +320,24 @@ def fenster(plan):
 
 
 def segment(plan, i, clip, s, e, tmp, out, vorschau):
-    platz, d, L = clip["platz"], e - s, layout(plan["titel"])
+    platz, d = clip["platz"], e - s
     labels = {c["platz"]: c["label"] for c in plan["clips"]}
     vorher = {c["platz"] for c in plan["clips"] if c["platz"] > platz}
-    bg = hintergrund_cache(plan["titel"])
-    p1, p2, ass = f"{tmp}/o{i}a.png", f"{tmp}/o{i}b.png", f"{tmp}/s{i}.ass"
+    p1, p2, ass, ton = f"{tmp}/o{i}a.png", f"{tmp}/o{i}b.png", f"{tmp}/s{i}.ass", f"{tmp}/ton.png"
     deckebene(plan["titel"], labels, vorher, p1)
     deckebene(plan["titel"], labels, vorher | {platz}, p2)
+    _toenung(ton)
     untertitel_ass(woerter(clip["datei"]) if plan.get("untertitel", True) else [], s, d,
                    clip.get("gelb", []) + plan.get("gelb", []), ass,
-                   plan.get("cta", "WELCHER WAR AM {BESTEN}?\\NAB IN DIE KOMMENTARE") if platz == 1 else None, L)
-    fw, fh, fokus = L["fw"], L["fh"], clip.get("fokus_x", 0.5)
+                   plan.get("cta", "WELCHER WAR AM {BESTEN}?\\NAB IN DIE KOMMENTARE") if platz == 1 else None,
+                   {"fy": FY, "fh": FH})
     f = ";".join([
-        f"[0:v]fps=30,setsar=1,scale={fw}:{fh}:force_original_aspect_ratio=increase:flags=lanczos,"
-        f"crop={fw}:{fh}:'(iw-{fw})*{fokus}':'(ih-{fh})/2'[fg]",
-        "[1:v]format=rgba[bg]",
-        f"[bg][fg]overlay={L['fx']}:{L['fy']}[v0]",
+        "[0:v]fps=30,setsar=1,split[a][b]",
+        f"[a]scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},boxblur=40:6,"
+        f"eq=brightness=-0.12:saturation=0.75[bg0]",
+        "[bg0][1:v]overlay=0:0[bg]",
+        f"[b]scale={FW}:{FH}:force_original_aspect_ratio=increase:flags=lanczos,crop={FW}:{FH}[fg]",
+        f"[bg][fg]overlay={FX}:{FY}[v0]",
         "[v0][2:v]overlay=0:0[v1]",
         f"[v1][3:v]overlay=0:0:enable='gte(t,{max(0, d - REVEAL_S):.2f})'[v2]",
         f"[v2]subtitles={ass}:fontsdir={FONTDIR},format=yuv420p[v]",
@@ -361,29 +345,34 @@ def segment(plan, i, clip, s, e, tmp, out, vorschau):
     ])
     q = ["-preset", "veryfast", "-crf", "23"] if vorschau else ["-preset", "medium", "-crf", "18"]
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", f"{s:.2f}", "-t", f"{d:.2f}", "-i", clip["datei"],
-                    "-loop", "1", "-i", bg, "-loop", "1", "-i", p1, "-loop", "1", "-i", p2,
+                    "-loop", "1", "-i", ton, "-loop", "1", "-i", p1, "-loop", "1", "-i", p2,
                     "-filter_complex", f, "-map", "[v]", "-map", "[a]", "-t", f"{d:.2f}",
                     "-c:v", "libx264", *q, "-profile:v", "high", "-r", "30",
                     "-c:a", "aac", "-b:a", "192k", "-ar", "48000", out], check=True)
 
 
 def vorlage(titel, ziel, beispiel=None, labels=None):
-    """Statisches Muster-Bild (für Vorschau/Abnahme des Designs)."""
-    L = layout(titel)
-    bg = hintergrund(titel, ziel)
+    """Statisches Muster-Bild des Designs (leer oder mit Beispielbild im Fenster)."""
     if beispiel:
-        b = Image.open(beispiel).convert("RGBA")
-        f = max(L["fw"] / b.width, L["fh"] / b.height)
-        b = b.resize((int(b.width * f) + 1, int(b.height * f) + 1), Image.LANCZOS)
-        b = b.crop(((b.width - L["fw"]) // 2, (b.height - L["fh"]) // 2,
-                    (b.width - L["fw"]) // 2 + L["fw"], (b.height - L["fh"]) // 2 + L["fh"]))
-        bg.alpha_composite(b, (L["fx"], L["fy"]))
+        b = Image.open(beispiel).convert("RGB")
+        f = max(W / b.width, H / b.height)
+        bg = b.resize((int(b.width * f) + 1, int(b.height * f) + 1), Image.LANCZOS)
+        bg = bg.crop(((bg.width - W) // 2, (bg.height - H) // 2, (bg.width - W) // 2 + W,
+                      (bg.height - H) // 2 + H)).filter(ImageFilter.GaussianBlur(40)).convert("RGBA")
+        bg = Image.eval(bg, lambda v: int(v * 0.85))
+        f = max(FW / b.width, FH / b.height)
+        fg = b.resize((int(b.width * f) + 1, int(b.height * f) + 1), Image.LANCZOS)
+        fg = fg.crop(((fg.width - FW) // 2, (fg.height - FH) // 2, (fg.width - FW) // 2 + FW,
+                      (fg.height - FH) // 2 + FH))
     else:
-        leer = Image.new("RGBA", (L["fw"], L["fh"]), (18, 13, 32, 255))
-        bg.alpha_composite(leer, (L["fx"], L["fy"]))
-    tmp = ziel + ".deck.png"
-    labels = labels or {}
-    deckebene(titel, labels, set(labels), tmp, bg=Image.open(hintergrund_cache(titel)).convert("RGBA"))
+        bg = Image.new("RGBA", (W, H), (30, 22, 48, 255))
+        fg = Image.new("RGB", (FW, FH), (22, 16, 36))
+    bg = bg.convert("RGBA")
+    tmp = ziel + ".tmp.png"
+    _toenung(tmp)
+    bg.alpha_composite(Image.open(tmp))
+    bg.paste(fg, (FX, FY))
+    deckebene(titel, labels or {}, set(labels or {}), tmp)
     bg.alpha_composite(Image.open(tmp))
     os.remove(tmp)
     bg.convert("RGB").save(ziel)
