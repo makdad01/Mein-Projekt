@@ -4,26 +4,26 @@
   "thema": "Chaos in GTA 6 (nur Spiel-Figuren)",
   "cta": "WELCHER WAR AM {KRANKSTEN}?\\NAB IN DIE KOMMENTARE",
   "gelb": [
-    "karma",
     "psycho",
+    "crashout",
     "schradin"
   ],
   "clips": [
     {
       "platz": 5,
       "datei": "clips/zarbex-psycho/5.mp4",
-      "label": "Instant Karma ⚡",
-      "twitch": "https://www.twitch.tv/zarbex/clip/DiligentCredulousGullFailFish-0GjiQ2ffSjVkD0Tq",
-      "titel_twitch": "instant Karma",
-      "laenge_s": 27
-    },
-    {
-      "platz": 4,
-      "datei": "clips/zarbex-psycho/4.mp4",
       "label": "Zarbex der Psycho 😈",
       "twitch": "https://www.twitch.tv/zarbex/clip/HelpfulTrappedYamMingLee-Fl2W1Ebck16waVAu",
       "titel_twitch": "Zarbex der Psycho",
       "laenge_s": 15
+    },
+    {
+      "platz": 4,
+      "datei": "clips/zarbex-psycho/4.mp4",
+      "label": "Zarbi geht Crashout 🤬",
+      "twitch": "https://www.twitch.tv/zarbex/clip/CloudyAttractiveOryxKeepo-hshW-C23zNmEUO_U",
+      "titel_twitch": "Zarbi geht crashout",
+      "laenge_s": 17.4
     },
     {
       "platz": 3,

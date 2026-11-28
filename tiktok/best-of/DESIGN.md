@@ -42,6 +42,7 @@ Muster-Bild erzeugen: `python3 tiktok/best-of/render.py --vorlage "PSYCHO ZARBEX
 ## Feedback zum Design
 | Datum | Feedback | Änderung |
 |---|---|---|
+| 29.11.2026 | Psycho Zarbex: Maki will „Zarbi geht Crashout“ dazu | Instant Karma raus, Crashout auf Platz 4, Psycho auf 5 |
 | 29.11.2026 | Psycho Zarbex: Platz 3 (Prügelei) + 1 (Schradin) gut; Rollator, „tritt mein Auto“, „Lucia umfahren“ raus | ersetzt durch Instant Karma, Zarbex der Psycho, Kurze Zündschnur |
 | 29.11.2026 | Überschrift → „STREAMER HIGHLIGHTS“, darunter „MOGDITV“, Wasserzeichen → „@MOGDITV“ | angepasst |
 | 29.11.2026 | Neues Designbriefing HIGHLIGHTS MOGDITV | komplettes Layout ersetzt (altes gelbes Design verworfen) |
