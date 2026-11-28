@@ -25,6 +25,8 @@ Für TikTok-Skripte den Skill `tiktok-skript` nutzen (`.claude/skills/tiktok-skr
 
 Best-of-Videos für den Kanal **HIGHLIGHTS MOGDITV** pro Streamer (61–100 s): festes, einheitliches Design in `tiktok/best-of/DESIGN.md`, gebaut mit `tiktok/best-of/render.py`. Ein Streamer nach dem anderen – erst wenn Maki einen abgenommen hat, kommt der nächste.
 
+Christmas-AI-Videos (Stil: 90er-Weihnachtsfilm-Look, Schnee, Lichter, romantischer Aufbau + Twist-Pointe, Untertitel unten mittig): Länge **mindestens 61 Sekunden** (ab 1:01), mit Streamer-/Rapper-Figuren. Claude liefert Ideen, Szenen-Prompts für KI-Video-Tools (z. B. Veo 3), Untertitel und Schnittliste – generiert die Videos nicht selbst.
+
 Details zu jedem Bereich stehen in der `README.md` des jeweiligen Ordners.
 
 # Git
