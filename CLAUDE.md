@@ -27,6 +27,8 @@ Best-of-Videos für den Kanal **HIGHLIGHTS MOGDITV** pro Streamer (61–100 s): 
 
 Christmas-AI-Videos (Stil: 90er-Weihnachtsfilm-Look, Schnee, Lichter, romantischer Aufbau + Twist-Pointe, Untertitel unten mittig): Länge **mindestens 61 Sekunden** (ab 1:01), mit Streamer-/Rapper-Figuren. Claude liefert Ideen, Szenen-Prompts für KI-Video-Tools (z. B. Veo 3), Untertitel und Schnittliste – generiert die Videos nicht selbst. Dialoge **nur auf Deutsch**; Geräusche von der KI; Musik entweder KI-Hintergrundmusik oder ein TikTok-Trend-Sound (z. B. „Du bist gut genug“), der in der TikTok-App leise druntergelegt wird.
 
+Bei den Christmas-AI-Videos: Streamer **namentlich** besetzen (wer spielt wen), und jede Geschichte muss in sich logisch sein (jeder Gag braucht einen nachvollziehbaren Grund). Ideen werden einzeln nacheinander mit Maki ausgearbeitet. Skripte in `tiktok/christmas-ai/`.
+
 Details zu jedem Bereich stehen in der `README.md` des jeweiligen Ordners.
 
 # Git
