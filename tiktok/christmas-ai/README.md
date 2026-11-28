@@ -21,7 +21,7 @@ Vorbild-Stil: @cinnovafilms / @helen.airt, Look eines Weihnachtsfilms aus den 90
 | 3 | Rapper auf dem Weihnachtsmarkt | Rapper, 2 Jungs, Verkäuferin | [03-rapper-weihnachtsmarkt.md](03-rapper-weihnachtsmarkt.md) |
 | 4 | Date auf der Eisbahn | Streamerin, Date | [04-eisbahn-date.md](04-eisbahn-date.md) |
 | 5 | Der Weihnachtsmann streamt | Streamer als Santa, Elf | [05-santa-streamt.md](05-santa-streamt.md) |
-| 6 | Streamer-Wichteln | MontanaBlack, xRohat, FiBii, TimGioh, CouchLim, EliasN97, Niklas Wilson, Marli, Ali Bumaye | [06-streamer-wichteln.md](06-streamer-wichteln.md) |
+| 6 | Streamer-Wichteln | MontanaBlack, xRohat, FiBii, TimGioh, CouchLim, EliasN97, NiklasWilson, Marli, Ali Bumaye | [06-streamer-wichteln.md](06-streamer-wichteln.md) |
 
 ## Besetzung (Maki trägt ein)
 
