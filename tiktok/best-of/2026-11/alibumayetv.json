@@ -1,0 +1,62 @@
+{
+  "streamer": "Ali Bumaye",
+  "untertitel": "Best of November 2026",
+  "handle": "",
+  "clips": [
+    {
+      "platz": 5,
+      "datei": "clips/alibumayetv/5.mp4",
+      "label": "Jackpot, Bruder",
+      "start": 0,
+      "ende": null,
+      "twitch": "https://www.twitch.tv/alibumayetv/clip/MotionlessRespectfulMangetoutRaccAttack-o9mCWddvRxnWdd7O",
+      "titel_twitch": "Jackpot, Bruder",
+      "views": 2243,
+      "laenge_s": 12.5
+    },
+    {
+      "platz": 4,
+      "datei": "clips/alibumayetv/4.mp4",
+      "label": "Ali Trap",
+      "start": 0,
+      "ende": null,
+      "twitch": "https://www.twitch.tv/alibumayetv/clip/BrightTubularNostrilWoofer-xy3LyY6FuPjBRZWC",
+      "titel_twitch": "ali trap",
+      "views": 3546,
+      "laenge_s": 30
+    },
+    {
+      "platz": 3,
+      "datei": "clips/alibumayetv/3.mp4",
+      "label": "Kleiner Pupsi",
+      "start": 0,
+      "ende": null,
+      "twitch": "https://www.twitch.tv/alibumayetv/clip/DiligentIntelligentClipsmomKippa-ugwHCXShxlvi0KRI",
+      "titel_twitch": "kleiner pupsiii ali",
+      "views": 11152,
+      "laenge_s": 8.4
+    },
+    {
+      "platz": 2,
+      "datei": "clips/alibumayetv/2.mp4",
+      "label": "Ali Falle",
+      "start": 0,
+      "ende": null,
+      "twitch": "https://www.twitch.tv/alibumayetv/clip/EphemeralPerfectStrawberryPogChamp-kKVOx_q2pAb6AvNb",
+      "titel_twitch": "ali falle",
+      "views": 13040,
+      "laenge_s": 58.8
+    },
+    {
+      "platz": 1,
+      "datei": "clips/alibumayetv/1.mp4",
+      "label": "Sehr stark, Bruder",
+      "start": 0,
+      "ende": null,
+      "twitch": "https://www.twitch.tv/alibumayetv/clip/UnusualRefinedBeanNinjaGrumpy-YH1-VJIYhP6xV2HJ",
+      "titel_twitch": "dass du darüber redest, das finde ich schon sehr stark, Bruder",
+      "views": 13264,
+      "laenge_s": 16
+    }
+  ]
+}

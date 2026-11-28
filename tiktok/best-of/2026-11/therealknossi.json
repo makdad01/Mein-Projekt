@@ -1,0 +1,62 @@
+{
+  "streamer": "Knossi",
+  "untertitel": "Best of November 2026",
+  "handle": "",
+  "clips": [
+    {
+      "platz": 5,
+      "datei": "clips/therealknossi/5.mp4",
+      "label": "The Bird Man",
+      "start": 0,
+      "ende": null,
+      "twitch": "https://www.twitch.tv/therealknossi/clip/SmoggyEntertainingLapwingJKanStyle-D87oO7ynZPZkbAiz",
+      "titel_twitch": "the bird man",
+      "views": 3447,
+      "laenge_s": 25.7
+    },
+    {
+      "platz": 4,
+      "datei": "clips/therealknossi/4.mp4",
+      "label": "Fibii & Rohat",
+      "start": 0,
+      "ende": null,
+      "twitch": "https://www.twitch.tv/therealknossi/clip/CleverSpikyCarabeefCurseLit-iW34gsPrYP2AXSfY",
+      "titel_twitch": "fibii rohat",
+      "views": 4410,
+      "laenge_s": 30.8
+    },
+    {
+      "platz": 3,
+      "datei": "clips/therealknossi/3.mp4",
+      "label": "Essen gehen mit Fabio",
+      "start": 0,
+      "ende": null,
+      "twitch": "https://www.twitch.tv/therealknossi/clip/CovertFunButterDeIlluminati-W1TRT-9x3CFK8mjn",
+      "titel_twitch": "\"Essen gehen\" mit Fabio",
+      "views": 6412,
+      "laenge_s": 42.8
+    },
+    {
+      "platz": 2,
+      "datei": "clips/therealknossi/2.mp4",
+      "label": "Clap für Rohat",
+      "start": 0,
+      "ende": null,
+      "twitch": "https://www.twitch.tv/therealknossi/clip/KathishCharmingElephantAMPTropPunch-2IuuYUh4AqmB49y9",
+      "titel_twitch": "clap für xRohat",
+      "views": 6796,
+      "laenge_s": 12.1
+    },
+    {
+      "platz": 1,
+      "datei": "clips/therealknossi/1.mp4",
+      "label": "Fitney Cräft",
+      "start": 0,
+      "ende": null,
+      "twitch": "https://www.twitch.tv/therealknossi/clip/GentleTriumphantGrouseRuleFive-Ff12HHCb-RJNIP_C",
+      "titel_twitch": "fitney cräft",
+      "views": 16225,
+      "laenge_s": 30
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "streamer": "Trymacs",
+  "untertitel": "Best of November 2026",
+  "handle": "",
+  "clips": [
+    {
+      "platz": 5,
+      "datei": "clips/trymacs/5.mp4",
+      "label": "Max kommt fast",
+      "start": 0,
+      "ende": null,
+      "twitch": "https://www.twitch.tv/trymacs/clip/TalentedJollyDelicataTheTarFu-ZRtZ_hno_P-I3Cdp",
+      "titel_twitch": "Max kommt fast",
+      "views": 10875,
+      "laenge_s": 9.2
+    },
+    {
+      "platz": 4,
+      "datei": "clips/trymacs/4.mp4",
+      "label": "Lucia & Jackson",
+      "start": 0,
+      "ende": null,
+      "twitch": "https://www.twitch.tv/trymacs/clip/LaconicShortCiderOhMyDog-tLryVhJhnhMBYkHw",
+      "titel_twitch": "Trymacs über Lucia und Jackson",
+      "views": 10082,
+      "laenge_s": 30
+    },
+    {
+      "platz": 3,
+      "datei": "clips/trymacs/3.mp4",
+      "label": "Zieht RGB Mew",
+      "start": 0,
+      "ende": null,
+      "twitch": "https://www.twitch.tv/trymacs/clip/BeautifulAmusedAlpacaAllenHuhu-5J00c2y2CtpGB6Dq",
+      "titel_twitch": "Trymacs zieht RGB Mew",
+      "views": 15642,
+      "laenge_s": 30
+    },
+    {
+      "platz": 2,
+      "datei": "clips/trymacs/2.mp4",
+      "label": "Kauft sich ne PS5",
+      "start": 0,
+      "ende": null,
+      "twitch": "https://www.twitch.tv/trymacs/clip/SpotlessSolidLardPipeHype-2EBu-HlG02fksz0m",
+      "titel_twitch": "ich kauf mir doch nh ps5",
+      "views": 18717,
+      "laenge_s": 17.2
+    },
+    {
+      "platz": 1,
+      "datei": "clips/trymacs/1.mp4",
+      "label": "Digger was?!",
+      "start": 0,
+      "ende": null,
+      "twitch": "https://www.twitch.tv/trymacs/clip/SparklyLitigiousSrirachaTakeNRG-NCpFwpHOu5KHHrt_",
+      "titel_twitch": "digger was",
+      "views": 63495,
+      "laenge_s": 13.3
+    }
+  ]
+}

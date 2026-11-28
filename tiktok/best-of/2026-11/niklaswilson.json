@@ -1,0 +1,62 @@
+{
+  "streamer": "Niklas Wilson",
+  "untertitel": "Best of November 2026",
+  "handle": "",
+  "clips": [
+    {
+      "platz": 5,
+      "datei": "clips/niklaswilson/5.mp4",
+      "label": "Aura",
+      "start": 0,
+      "ende": null,
+      "twitch": "https://www.twitch.tv/niklaswilson/clip/PatientColdbloodedSardineStoneLightning-PdaioZGgymdLIGl0",
+      "titel_twitch": "Aura",
+      "views": 1549,
+      "laenge_s": 21.9
+    },
+    {
+      "platz": 4,
+      "datei": "clips/niklaswilson/4.mp4",
+      "label": "Sido-Meinung",
+      "start": 0,
+      "ende": null,
+      "twitch": "https://www.twitch.tv/niklaswilson/clip/ThoughtfulRealWoodpeckerKeepo-yY_jb4kU0nx40DM8",
+      "titel_twitch": "sido Meinung",
+      "views": 1973,
+      "laenge_s": 30
+    },
+    {
+      "platz": 3,
+      "datei": "clips/niklaswilson/3.mp4",
+      "label": "Eskalation",
+      "start": 0,
+      "ende": null,
+      "twitch": "https://www.twitch.tv/niklaswilson/clip/DrabOilyWasabiKippa-Sxbf3mw8ajBT4hWh",
+      "titel_twitch": "😂😂",
+      "views": 2900,
+      "laenge_s": 30
+    },
+    {
+      "platz": 2,
+      "datei": "clips/niklaswilson/2.mp4",
+      "label": "Lachflash",
+      "start": 0,
+      "ende": null,
+      "twitch": "https://www.twitch.tv/niklaswilson/clip/SpikySpotlessLorisRickroll-igbDpj5Y1zDYrwzN",
+      "titel_twitch": "HAHAHAHAHA",
+      "views": 3521,
+      "laenge_s": 60
+    },
+    {
+      "platz": 1,
+      "datei": "clips/niklaswilson/1.mp4",
+      "label": "Bausa?",
+      "start": 0,
+      "ende": null,
+      "twitch": "https://www.twitch.tv/niklaswilson/clip/SquareKnottyDragonfruitGivePLZ-zBpZBggFEzOaH-C9",
+      "titel_twitch": "bausa?",
+      "views": 15745,
+      "laenge_s": 5
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "streamer": "MontanaBlack",
+  "untertitel": "Best of November 2026",
+  "handle": "",
+  "clips": [
+    {
+      "platz": 5,
+      "datei": "clips/montanablack88/5.mp4",
+      "label": "Zieh blank!",
+      "start": 0,
+      "ende": null,
+      "twitch": "https://www.twitch.tv/montanablack88/clip/BillowingTallPotGingerPower-c5nutY8OgIS7KHbt",
+      "titel_twitch": "Zieh die blank die Dinger!",
+      "views": 6562,
+      "laenge_s": 30
+    },
+    {
+      "platz": 4,
+      "datei": "clips/montanablack88/4.mp4",
+      "label": "Kein Aim",
+      "start": 0,
+      "ende": null,
+      "twitch": "https://www.twitch.tv/montanablack88/clip/CalmElatedPrariedog4Head-r1jQrPTSP5J2vEkV",
+      "titel_twitch": "Monte hat kein Aim",
+      "views": 8863,
+      "laenge_s": 60
+    },
+    {
+      "platz": 3,
+      "datei": "clips/montanablack88/3.mp4",
+      "label": "Der Rewi wird gemacht",
+      "start": 0,
+      "ende": null,
+      "twitch": "https://www.twitch.tv/montanablack88/clip/BreakableGoldenLarkCorgiDerp-X5I93mgmLWcCTlNu",
+      "titel_twitch": "Da wird der Rewi gemacht",
+      "views": 11063,
+      "laenge_s": 30
+    },
+    {
+      "platz": 2,
+      "datei": "clips/montanablack88/2.mp4",
+      "label": "Wutköder-Video",
+      "start": 0,
+      "ende": null,
+      "twitch": "https://www.twitch.tv/montanablack88/clip/EmpathicKathishPeanutTheRinger-wv5wLBedZtgN01zu",
+      "titel_twitch": "Leute fallen auf Wutköder Video rein",
+      "views": 11580,
+      "laenge_s": 51.6
+    },
+    {
+      "platz": 1,
+      "datei": "clips/montanablack88/1.mp4",
+      "label": "Crashout",
+      "start": 0,
+      "ende": null,
+      "twitch": "https://www.twitch.tv/montanablack88/clip/DirtySpicyTortoiseVoHiYo-fYyfVsGdwwHDdxeU",
+      "titel_twitch": "crashout",
+      "views": 14957,
+      "laenge_s": 60
+    }
+  ]
+}

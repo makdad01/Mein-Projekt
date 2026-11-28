@@ -1,0 +1,62 @@
+{
+  "streamer": "Mert Abi",
+  "untertitel": "Best of November 2026",
+  "handle": "",
+  "clips": [
+    {
+      "platz": 5,
+      "datei": "clips/mertabimula/5.mp4",
+      "label": "Bin ich Imker?!",
+      "start": 0,
+      "ende": null,
+      "twitch": "https://www.twitch.tv/mertabimula/clip/DoubtfulPoorMarjoramAMPEnergyCherry-gjSnFtw3vxr8jc0k",
+      "titel_twitch": "BIN ICH IMKER ?????",
+      "views": 1920,
+      "laenge_s": 30
+    },
+    {
+      "platz": 4,
+      "datei": "clips/mertabimula/4.mp4",
+      "label": "Trymacs zersprengt",
+      "start": 0,
+      "ende": null,
+      "twitch": "https://www.twitch.tv/mertabimula/clip/CourageousProudVultureFreakinStinkin-tw3e7Csedr4xMfiv",
+      "titel_twitch": "Jussef zersprengt Trymacs",
+      "views": 2224,
+      "laenge_s": 30
+    },
+    {
+      "platz": 3,
+      "datei": "clips/mertabimula/3.mp4",
+      "label": "Opa gesniped",
+      "start": 0,
+      "ende": null,
+      "twitch": "https://www.twitch.tv/mertabimula/clip/CreativeSilkySalmonYouDontSay-W6iwM06gMmvFonex",
+      "titel_twitch": "OPA WIRD GESNIPED LUL",
+      "views": 3212,
+      "laenge_s": 30
+    },
+    {
+      "platz": 2,
+      "datei": "clips/mertabimula/2.mp4",
+      "label": "Flaschen öffnen",
+      "start": 0,
+      "ende": null,
+      "twitch": "https://www.twitch.tv/mertabimula/clip/SeductiveKawaiiKittenNinjaGrumpy-ksNWnWSn7hHGFuQc",
+      "titel_twitch": "Mert hat mal höher Flaschen geöffnet",
+      "views": 3942,
+      "laenge_s": 19
+    },
+    {
+      "platz": 1,
+      "datei": "clips/mertabimula/1.mp4",
+      "label": "Mert sprengt alles",
+      "start": 0,
+      "ende": null,
+      "twitch": "https://www.twitch.tv/mertabimula/clip/RespectfulMildOrangeCopyThis-7V_2Z3Ohct42Ax1a",
+      "titel_twitch": "MERT SPRENGT ALLES",
+      "views": 7932,
+      "laenge_s": 30
+    }
+  ]
+}
